@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Samuel &#8211; JEDA</title>
+	<atom:link href="https://www.eosjapan.org/?feed=rss2&#038;author=8" rel="self" type="application/rss+xml" />
+	<link>https://www.eosjapan.org</link>
+	<description>一般社団法人　日本EOS ​開発者協会</description>
+	<lastBuildDate>
+	Tue, 19 Feb 2019 05:29:33 +0000	</lastBuildDate>
+	<language>ja</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+
+<image>
+	<url>https://www.eosjapan.org/wp-content/uploads/2018/04/cropped-logo-1-32x32.png</url>
+	<title>Samuel &#8211; JEDA</title>
+	<link>https://www.eosjapan.org</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>JEDA Position on ECAF Ruling</title>
+		<link>https://www.eosjapan.org/?p=585</link>
+				<comments>https://www.eosjapan.org/?p=585#respond</comments>
+				<pubDate>Wed, 16 Jan 2019 06:33:15 +0000</pubDate>
+		<dc:creator><![CDATA[Samuel]]></dc:creator>
+				<category><![CDATA[お知らせ]]></category>
+
+		<guid isPermaLink="false">https://www.eosjapan.org/?p=585</guid>
+				<description><![CDATA[JEDA publishes this position w ...]]></description>
+								<content:encoded><![CDATA[<p>JEDA publishes this position with regards to the recent <a href="https://eoscorearbitration.io/wp-content/uploads/2018/12/ECAF-Ruling-Case-0027-2018-12-14-AR-002.pdf">ECAF ruling</a>&nbsp;&nbsp;which was not approved by BPs for execution.</p>
+<p>JEDA was one of the few BPs to vote in favor&#8211;as such, this position forms part of a minority view.</p>
+<h1>Reasoning</h1>
+<h2>Preamble &#8211; Core Principles</h2>
+<p>Before examining the details of our reasoning, we&#8217;ll firstly establish formally our first principles upon which all positions are built:</p>
+<p>1. Maintain a stable Mainnet.</p>
+<p>2. Enforce Arbitration orders, insofar as it doesn&#8217;t conflict with Principle #1.</p>
+<p>3. Upgrade and improve the Mainnet, insofar as it doesn&#8217;t conflict with Principles #1 or #2.</p>
+<h2>1 &#8211; Helping Users in Need</h2>
+<p>We, as having been voted in by the community of holders, are stewards of the Mainnet and, most importantly, its community. The community and its members are the ultimate authority&#8211;not the market price. We consider this self-evident&#8211;nevertheless, this is also prescribed by Article V of the Constitution.</p>
+<p>To put it simply, a user is in need, and we are in position to help. This is reason enough.</p>
+<p>There is a backlog of users who require this same remedy&#8211;this failure to perform on this case not only affects the claimants to the case, but all other users in the queue, as well as future users who will face the same issue.</p>
+<p>We&#8217;ve heard others make the position that functionality to automate the key recovery process is in progress of being implemented. That may well be true. Yet, this is not an argument. We&#8211;the BPs&#8211;collectively have the power to remedy this case now. We also have a duty to do so.</p>
+<h2>2 &#8211; We Obey the Constitution</h2>
+<p>Article III clearly states that an arbitrator&#8217;s order is sufficient to enforce changes.</p>
+<p>If one believes in governance and limited/separated powers, then any actor in the governance structure must put trust and reliance in the rest of the structure. Nevertheless, it is prudent to verify&#8211;to perform due-diligence&#8211;in such case, one may simply read the well-versed ECAF orders to find the full reasoning. The level of articulation and transparency by ECAF ought to be appreciated&#8211;not reviled.</p>
+<p>Even in the worst case, that BPs may disagree with rulings and orders, they should nonetheless perform the order and formally start an &#8220;appeals&#8221; process for &#8220;judicial review.&#8221;</p>
+<p>We believe in governance and due-process. ECAF has followed its process. We, BPs, should follow ours.</p>
+<h2>3 &#8211; Protecting Life, Liberty and Property</h2>
+<p>We often hear a lot of arguments that seem to conflate private key with property.</p>
+<p>Property is the recognized legal relationship between a person and an asset.</p>
+<p>For technical reasons, the holder of a private key is always presumed to be owner, and hence may exercise rights as its owner. This is the only reasonable way to make the technology perform expediently.</p>
+<p>However, as indicated, the private key is the *presumption* of ownership. If one can prove ownership by other means, a new key ought to be fashioned for the owner.</p>
+<p>This is the real-world way to handle this type of scenario. As an example: imagine the owner of a house loses his key; he would call a locksmith; steps would be taken to verify that he/she is in fact the owner of this house; then the lock would be replaced.</p>
+<p>Even if one disagrees with the example above, one should at least recognize that key recovery was promised in the White Paper.</p>
+<h1>Conclusion</h1>
+<p>To put things simply: we have a duty to perform orders in accordance to governance; all the while, we have an opportunity to help our members in need.</p>
+<p>We stand by our principles and will keep voting in accordance thereto.</p>
+]]></content:encoded>
+							<wfw:commentRss>https://www.eosjapan.org/?feed=rss2&#038;p=585</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

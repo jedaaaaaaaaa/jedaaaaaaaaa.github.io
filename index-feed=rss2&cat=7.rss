@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>チュートリアル &#8211; JEDA</title>
+	<atom:link href="https://www.eosjapan.org/?feed=rss2&#038;cat=7" rel="self" type="application/rss+xml" />
+	<link>https://www.eosjapan.org</link>
+	<description>一般社団法人　日本EOS ​開発者協会</description>
+	<lastBuildDate>
+	Tue, 19 Feb 2019 05:29:33 +0000	</lastBuildDate>
+	<language>ja</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+
+<image>
+	<url>https://www.eosjapan.org/wp-content/uploads/2018/04/cropped-logo-1-32x32.png</url>
+	<title>チュートリアル &#8211; JEDA</title>
+	<link>https://www.eosjapan.org</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>スマートコントラクトコンパイルエラー fatal error: &#8216;eosiolib/eosio.hpp&#8217; file not found 解決方法</title>
+		<link>https://www.eosjapan.org/?p=486</link>
+				<comments>https://www.eosjapan.org/?p=486#respond</comments>
+				<pubDate>Tue, 11 Sep 2018 00:19:30 +0000</pubDate>
+		<dc:creator><![CDATA[Singularity Technology]]></dc:creator>
+				<category><![CDATA[EOS]]></category>
+		<category><![CDATA[チュートリアル]]></category>
+		<category><![CDATA[eosiocpp]]></category>
+		<category><![CDATA[fatal error: 'eosiolib/eosio.hpp' file not found]]></category>
+		<category><![CDATA[コンパイルエラー]]></category>
+		<category><![CDATA[スマートコントラクト]]></category>
+
+		<guid isPermaLink="false">https://www.eosjapan.org/?p=486</guid>
+				<description><![CDATA[最新版のEOSをインストールしました。早速、スマートコントラ ...]]></description>
+								<content:encoded><![CDATA[<p>最新版のEOSをインストールしました。早速、スマートコントラクトを試作し、コンパイルするとエラーが出ました。</p>
+<p class="media-heading"><span class="title" style="color: #ff0000">fatal error: &#8216;eosiolib/eosio.hpp&#8217; file not found 。</span></p>
+<p>ネットでいろいろ探しまして、解決方法がなさそうです。EOSを最インストールしても、解決できない。</p>
+<p>自力しかないと覚悟してから、eosiocppファイルから調査を始めました。</p>
+<h2>１、ファイルの格納パス</h2>
+<p>eosiocppは下記二つ箇所に格納されています。</p>
+<p>・XXXX/eos/build/tools/</p>
+<p>・/usr/local/eosio/bin</p>
+<p>中身が全く同じです。bashのスクリプトであり。</p>
+<h2>２、簡単に分析しましょう。</h2>
+<p><img class="alignnone size-medium wp-image-487" src="https://www.eosjapan.org/wp-content/uploads/2018/09/84b4af99-065f-4981-ba46-fa0e4e8d20f7-300x80.png" alt="" width="300" height="80" srcset="https://www.eosjapan.org/wp-content/uploads/2018/09/84b4af99-065f-4981-ba46-fa0e4e8d20f7-300x80.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/09/84b4af99-065f-4981-ba46-fa0e4e8d20f7.png 616w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>二行目の</p>
+<p>EOSIO_BIN_INSTALL_DIR=&#8217;dirname $0&#8242;</p>
+<p>を見た瞬間、EOSは大丈夫なの？？？</p>
+<p>EOSのインストールパスの取得方法は意外にもコマンドの実行パスから判明するようです。</p>
+<p>綺麗に直そうとしても、解決することを優先にして、パスをハードコーティングしました。</p>
+<h2>３、パスの取得方法を書き直す</h2>
+<p>EOSIO_BIN_INSTALL_DIRを使わず、捨てます。</p>
+<p>EOSIO_INSTALL_DIRにEOSのインストールパスを直接に設定する。</p>
+<p><span class="c" style="color: #0000ff">#EOSIO_BIN_INSTALL_DIR=`dirname $0` </span></p>
+<p><span class="c" style="color: #0000ff">#if [ &#8220;${EOSIO_BIN_INSTALL_DIR}&#8221; == &#8220;.&#8221; ]; then</span></p>
+<p><span class="c" style="color: #0000ff"> # EOSIO_BIN_INSTALL_DIR=`pwd`</span></p>
+<p><span style="color: #0000ff"> <span class="c">#fi</span> <span class="c">#EOSIO_INSTALL_DIR=`dirname ${EOSIO_BIN_INSTALL_DIR}`</span></span></p>
+<p><span style="color: #0000ff"> <span class="nv">EOSIO_INSTALL_DIR</span><span class="o">=</span><span class="s2">&#8220;/<span style="color: #ff0000">your eos install director</span>/eos&#8221;</span></span></p>
+<h2>４、修正後のイメージ</h2>
+<p>直す方針が決めたら、コンパイルしながら、足りないライブラリや間違いパスなどどんどん直して、eosiocppは下記通りになりました。</p>
+<p><em><span style="color: #ff0000">ご注意：</span></em></p>
+<p><em><span style="color: #ff0000">個人環境のパスがいくつありまして、そのまま使えないです。</span></em></p>
+<p><em><span style="color: #ff0000">比較ツールを利用して、ローカルのをマージする必要。</span></em></p>
+<p>#!/bin/bash</p>
+<p>#EOSIO_BIN_INSTALL_DIR=`dirname $0`<br />
+#if [ &#8220;${EOSIO_BIN_INSTALL_DIR}&#8221; == &#8220;.&#8221; ]; then<br />
+# EOSIO_BIN_INSTALL_DIR=`pwd`<br />
+#fi<br />
+#EOSIO_INSTALL_DIR=`dirname ${EOSIO_BIN_INSTALL_DIR}`<br />
+EOSIO_INSTALL_DIR=&#8221;/home/yaoyh/app/eos&#8221;</p>
+<p>echo $EOSIO_INSTALL_DIR</p>
+<p>ABIGEN=${EOSIO_INSTALL_DIR}/build/programs/eosio-abigen/eosio-abigen<br />
+BOOST_INCLUDE_DIR=/home/yaoyh/opt/boost/include<br />
+function copy_skeleton {<br />
+set -e<br />
+# cp -r &#8220;${EOSIO_INSTALL_DIR}/share/eosio/skeleton/.&#8221; $newname<br />
+cp -r &#8220;${EOSIO_INSTALL_DIR}/contracts/skeleton/.&#8221; $newname</p>
+<p>for file in $(find ./$newname -name &#8216;skeleton.*&#8217;)<br />
+do<br />
+newfile=`echo $file | sed &#8216;s/skeleton\./'&#8221;$newname&#8221;&#8216;./&#8217;`<br />
+# echo mv &#8220;${file}&#8221; &#8220;${newfile}&#8221;<br />
+mv &#8220;${file}&#8221; &#8220;${newfile}&#8221;<br />
+exp=s/skeleton/${newname}/g<br />
+# echo sed -i ${exp} ${newfile}<br />
+sed ${exp} ${newfile} &gt; ${newfile}1<br />
+mv ${newfile}1 ${newfile}<br />
+done<br />
+echo &#8220;created $newname from skeleton&#8221;<br />
+set +e<br />
+}</p>
+<p>function build_contract {<br />
+set -e<br />
+workdir=`mktemp -d`</p>
+<p>if [[ ${VERBOSE} == &#8220;1&#8221; ]]; then<br />
+PRINT_CMDS=&#8221;set -x&#8221;<br />
+fi</p>
+<p>($PRINT_CMDS; mkdir $workdir/built)</p>
+<p>for file in $@; do<br />
+name=`basename $file`<br />
+filePath=`dirname $file`</p>
+<p>($PRINT_CMDS; /home/yaoyh/opt/wasm/bin/clang -emit-llvm -O3 &#8211;std=c++14 &#8211;target=wasm32 -nostdinc \<br />
+-DBOOST_DISABLE_ASSERTS -DBOOST_EXCEPTION_DISABLE \<br />
+-nostdlib -nostdlibinc -ffreestanding -nostdlib -fno-threadsafe-statics -fno-rtti \<br />
+-fno-exceptions -I ${EOSIO_INSTALL_DIR}/include \<br />
+-I${EOSIO_INSTALL_DIR}/contracts/libc++/upstream/include \<br />
+-I${EOSIO_INSTALL_DIR}/contracts/musl/upstream/include \<br />
+-I${BOOST_INCLUDE_DIR} \<br />
+-I $filePath \<br />
+-I${EOSIO_INSTALL_DIR}/contracts \<br />
+-I${EOSIO_INSTALL_DIR}/externals/magic_get/include \<br />
+${EOSIOCPP_CFLAGS} \<br />
+-c $file -o $workdir/built/$name<br />
+)</p>
+<p>done</p>
+<p>($PRINT_CMDS; /home/yaoyh/opt/wasm/bin/llvm-link -only-needed -o $workdir/linked.bc $workdir/built/* \<br />
+${EOSIO_INSTALL_DIR}/build/contracts/eosiolib/eosiolib.bc \<br />
+${EOSIO_INSTALL_DIR}/build/contracts/libc++/libc++.bc \<br />
+${EOSIO_INSTALL_DIR}/build/contracts/musl/libc.bc</p>
+<p>)<br />
+($PRINT_CMDS; /home/yaoyh/opt/wasm/bin/llc -thread-model=single &#8211;asm-verbose=false -o $workdir/assembly.s $workdir/linked.bc)<br />
+($PRINT_CMDS; ${EOSIO_INSTALL_DIR}/build/externals/binaryen/bin/eosio-s2wasm -o $outname -s 16384 $workdir/assembly.s)<br />
+($PRINT_CMDS; ${EOSIO_INSTALL_DIR}/build/libraries/wasm-jit/Source/Programs/eosio-wast2wasm $outname ${outname%.*}.wasm -n)</p>
+<p>($PRINT_CMDS; rm -rf $workdir)<br />
+set +e<br />
+}</p>
+<p>function generate_abi {</p>
+<p>if [[ ! -e &#8220;$1&#8221; ]]; then<br />
+echo &#8220;You must specify a file&#8221;<br />
+exit 1<br />
+fi</p>
+<p>context_folder=$(cd &#8220;$(dirname &#8220;$1&#8243;)&#8221; ; pwd -P)</p>
+<p>${ABIGEN} -extra-arg=-c -extra-arg=&#8211;std=c++14 -extra-arg=&#8211;target=wasm32 \<br />
+-extra-arg=-nostdinc -extra-arg=-nostdinc++ -extra-arg=-DABIGEN \<br />
+-extra-arg=-I${EOSIO_INSTALL_DIR}/contracts/libc++/upstream/include \<br />
+-extra-arg=-I${EOSIO_INSTALL_DIR}/contracts/musl/upstream/include \<br />
+-extra-arg=-I${BOOST_INCLUDE_DIR} \<br />
+-extra-arg=-I${EOSIO_INSTALL_DIR}/contracts \<br />
+-extra-arg=-I${EOSIO_INSTALL_DIR}/externals/magic_get/include \<br />
+-extra-arg=${EOSIOCPP_CFLAGS} \<br />
+-extra-arg=-I${EOSIO_INSTALL_DIR}/include -extra-arg=-I$context_folder \<br />
+-extra-arg=-fparse-all-comments -destination-file=${outname} -verbose=0 \<br />
+-context=$context_folder $1</p>
+<p>if [ &#8220;$?&#8221; -ne 0 ]; then<br />
+exit 1<br />
+fi</p>
+<p>echo &#8220;Generated ${outname} &#8230;&#8221;<br />
+}</p>
+<p>function print_help {<br />
+echo &#8220;Usage: $0 -o output.wast contract.cpp [other.cpp &#8230;]&#8221;<br />
+echo &#8221; OR&#8221;<br />
+echo &#8221; $0 -n mycontract&#8221;<br />
+echo &#8221; OR&#8221;<br />
+echo &#8221; $0 -g contract.abi types.hpp&#8221;<br />
+echo<br />
+echo &#8220;Options:&#8221;<br />
+echo &#8221; -n | &#8211;newcontract [name]&#8221;<br />
+echo &#8221; Create a new contract in the [name] folder, based on the example contract&#8221;<br />
+echo &#8221; OR&#8221;<br />
+echo &#8221; -o | &#8211;outname [output.wast] [input.cpp &#8230;]&#8221;<br />
+echo &#8221; Generate the wast output file based on input cpp files&#8221;<br />
+echo &#8221; The wasm output will also be created as output.wasm&#8221;<br />
+echo &#8221; OR&#8221;<br />
+echo &#8221; -g | &#8211;genabi contract.abi types.hpp&#8221;<br />
+echo &#8221; Generate the ABI specification file [EXPERIMENTAL]&#8221;<br />
+}</p>
+<p>command=&#8221;&#8221;</p>
+<p>while [[ $# -gt 1 ]]<br />
+do<br />
+key=&#8221;$1&#8243;</p>
+<p>case $key in<br />
+-h|&#8211;help)<br />
+print_help<br />
+break;<br />
+;;<br />
+-n|&#8211;newcontract)<br />
+newname=&#8221;$2&#8243;<br />
+command=&#8221;newcontract&#8221;<br />
+shift 2<br />
+break<br />
+;;<br />
+-o|&#8211;outname)<br />
+outname=&#8221;$2&#8243;<br />
+command=&#8221;outname&#8221;<br />
+shift 2<br />
+break<br />
+;;<br />
+-g|&#8211;genabi)<br />
+outname=&#8221;$2&#8243;<br />
+command=&#8221;genabi&#8221;<br />
+shift 2<br />
+;;<br />
+*)<br />
+echo &#8220;Unrecognized option: $1&#8221;<br />
+exit 1<br />
+;;<br />
+esac<br />
+done</p>
+<p>if [[ &#8220;outname&#8221; == &#8220;$command&#8221; ]]; then<br />
+build_contract $@<br />
+elif [[ &#8220;newcontract&#8221; == &#8220;$command&#8221; ]]; then<br />
+copy_skeleton<br />
+elif [[ &#8220;genabi&#8221; == &#8220;$command&#8221; ]]; then<br />
+generate_abi $@<br />
+else<br />
+print_help<br />
+exit 1<br />
+fi</p>
+]]></content:encoded>
+							<wfw:commentRss>https://www.eosjapan.org/?feed=rss2&#038;p=486</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>最新版EOSをUbuntu 18.04.1 LTS環境にインストール</title>
+		<link>https://www.eosjapan.org/?p=469</link>
+				<comments>https://www.eosjapan.org/?p=469#respond</comments>
+				<pubDate>Mon, 10 Sep 2018 10:21:47 +0000</pubDate>
+		<dc:creator><![CDATA[Singularity Technology]]></dc:creator>
+				<category><![CDATA[EOS]]></category>
+		<category><![CDATA[チュートリアル]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+		<category><![CDATA[インストール]]></category>
+		<category><![CDATA[環境構築]]></category>
+
+		<guid isPermaLink="false">https://www.eosjapan.org/?p=469</guid>
+				<description><![CDATA[EOSのメインネットがリリースされたら、元々のローカルのテス ...]]></description>
+								<content:encoded><![CDATA[<p>EOSのメインネットがリリースされたら、元々のローカルのテスト環境がバージョンアップしていない。最近、新しい案件を立ち上げようとして、最新のバージョンを挑戦しましょう！</p>
+<p>ここで、古いバージョンとの差異も含めて、インストール手順と注意事項をメモして、共有します。</p>
+<p>&nbsp;</p>
+<h5>OSバージョン：</h5>
+<p><span style="color: #ff0000">Ubuntu 18.04.1 LTS</span></p>
+<h1>手順：</h1>
+<h2>１、githubから最新のソースコードをダウンロード</h2>
+<p><span style="color: #0000ff"><span class="nv">$ </span>git clone https://github.com/EOSIO/eos <span class="nt">&#8211;recursive</span></span></p>
+<h2>２、ソースコードをコンパイル</h2>
+<p>ダウンロードが完了したら、eosフォルダに移動して、eosio_build.shを実行すれば、OKです。</p>
+<p>最初の１回目は多少時間がかかる。２回目からかからなくなる。</p>
+<p><span style="color: #0000ff"><span class="nv">$ </span><span class="nb">cd </span>eos</span></p>
+<p><span style="color: #0000ff"> <span class="nv">$ </span>./eosio_build.sh</span></p>
+<p>下記画面が出たら、コンパイルが成功！</p>
+<p><img class="alignnone wp-image-474" src="https://www.eosjapan.org/wp-content/uploads/2018/09/1-300x241.png" alt="" width="735" height="590" srcset="https://www.eosjapan.org/wp-content/uploads/2018/09/1-300x241.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/09/1.png 702w" sizes="(max-width: 735px) 100vw, 735px" /><br />
+<span style="color: #ff0000"><strong>ご注意：</strong></span></p>
+<p><span style="color: #000000">上記画面で、これから何をすべきかを明確に書いてます。</span></p>
+<p><span style="color: #ff0000">To verify your installation run the following commands:</span></p>
+<p><span style="color: #ff0000">export PATH=${HOME}/opt/mongodb/bin:$PATH</span></p>
+<p><span style="color: #ff0000">/root/opt/mongodb/bin/mongod -f /root/opt/mongodb/mongod.conf &amp;</span></p>
+<p><span style="color: #ff0000">cd /home/yaoyh/app/eos/build; make test</span></p>
+<p>必ず従ってやった方が良いです。</p>
+<h2>３、案内通りコマンド発行</h2>
+<p><span style="color: #0000ff"><span class="nv">$ </span><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="k">${</span><span class="nv">HOME</span><span class="k">}</span>/opt/mongodb/bin:<span class="nv">$PATH</span></span></p>
+<p><span style="color: #0000ff"> <span class="nv">$ </span>/root/opt/mongodb/bin/mongod <span class="nt">-f</span> /root/opt/mongodb/mongod.conf &amp;</span></p>
+<p><span style="color: #0000ff"> <span class="nv">$ </span><span class="nb">cd</span> /home/yaoyh/app/eos/build<span class="p">;</span> make <span class="nb">test</span></span></p>
+<p>make testは４１項目があって（前のバージョンは35？項目）、完了までは時間がかかるし、全部OKが必要。</p>
+<p>運が良くなくて、エラーが出ると、下記方法でエラー詳細が見えます。</p>
+<p>調査に役に立つと思います。</p>
+<h2>４、テスト失敗の対策</h2>
+<p>例えば、Mongod関連のテストが落ちた、ログを出力しようとすると</p>
+<p><span style="color: #0000ff"><span class="nv">$ </span><span class="nb">cd</span> /yourpath/eos/build/programs/nodeos </span></p>
+<p><span style="color: #0000ff"><span class="nv">$ </span>./nodeos_run_test.py <span class="nt">&#8211;mongod</span> <span class="nt">-v</span> <span class="nt">&#8211;dump-error-detail</span> <span class="o">&gt;</span>&amp;　mongod_test.out</span></p>
+<p>Eosのアーキテクチャはよく知らない方は下記構成図を頭に入った方が良いでしょう。</p>
+<h2><img class="alignnone wp-image-476" src="https://www.eosjapan.org/wp-content/uploads/2018/09/f101fe77-ca50-4690-be59-09c90ebe5544-300x145.png" alt="" width="716" height="346" srcset="https://www.eosjapan.org/wp-content/uploads/2018/09/f101fe77-ca50-4690-be59-09c90ebe5544-300x145.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/09/f101fe77-ca50-4690-be59-09c90ebe5544-768x372.png 768w, https://www.eosjapan.org/wp-content/uploads/2018/09/f101fe77-ca50-4690-be59-09c90ebe5544.png 1000w" sizes="(max-width: 716px) 100vw, 716px" /></h2>
+<p>５、いよいよインストール</p>
+<p>テスト全部OKなったら、いよいよインストール段階に入った。</p>
+<p><span style="color: #0000ff"><span class="nv">$ </span><span class="nb">cd </span>build </span></p>
+<p><span style="color: #0000ff"><span class="nv"> $ </span>make <span class="nb">install</span></span></p>
+<p><span style="color: #000000">makeを使わず、/eos/eosio_install.shを使ってインストールも可能です。</span></p>
+<p><span style="color: #0000ff"><span class="nv">$ </span><span class="nb">cd</span> /yourPath/eos</span></p>
+<p><span style="color: #0000ff"> <span class="nv">$ </span>eosio_install.sh</span></p>
+<p><img class="alignnone wp-image-478" src="https://www.eosjapan.org/wp-content/uploads/2018/09/40ca2ac3-c8b4-4bb8-9118-002263edf606-300x270.png" alt="" width="734" height="661" srcset="https://www.eosjapan.org/wp-content/uploads/2018/09/40ca2ac3-c8b4-4bb8-9118-002263edf606-300x270.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/09/40ca2ac3-c8b4-4bb8-9118-002263edf606.png 691w" sizes="(max-width: 734px) 100vw, 734px" /><br />
+お疲れ様でした。ここまで、インストールが完了しました。</p>
+<h2>６、Nodeを起動</h2>
+<p>nodeを起動してみましょう。</p>
+<p><span style="color: #0000ff"><span class="nv">$ </span> nodeos <span class="nt">-e</span> <span class="nt">-p</span> eosio <span class="nt">&#8211;plugin</span> eosio::chain_api_plugin <span class="nt">&#8211;plugin</span> eosio::history_api_plugin</span></p>
+<p>上記コマンドを発行するより、0.5秒周期で一つブロックが作成できる。</p>
+<p><img class="alignnone wp-image-479" src="https://www.eosjapan.org/wp-content/uploads/2018/09/22b62ecf-189d-4524-9f45-cb301113b2ab-300x217.png" alt="" width="735" height="532" srcset="https://www.eosjapan.org/wp-content/uploads/2018/09/22b62ecf-189d-4524-9f45-cb301113b2ab-300x217.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/09/22b62ecf-189d-4524-9f45-cb301113b2ab.png 724w" sizes="(max-width: 735px) 100vw, 735px" /></p>
+<h2>７、NODEの情報を見る</h2>
+<p><span style="color: #0000ff"><span class="nv">$ </span> <span class="nb">cd</span> /youpath/eos/build/programs/cleos</span></p>
+<p><span style="color: #0000ff"> <span class="nv">$ </span> cleos get info</span></p>
+<p><img class="alignnone wp-image-480" src="https://www.eosjapan.org/wp-content/uploads/2018/09/2da478bc-f94a-46f2-bd85-4375c19ee7d1-300x126.png" alt="" width="733" height="308" srcset="https://www.eosjapan.org/wp-content/uploads/2018/09/2da478bc-f94a-46f2-bd85-4375c19ee7d1-300x126.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/09/2da478bc-f94a-46f2-bd85-4375c19ee7d1.png 732w" sizes="(max-width: 733px) 100vw, 733px" /></p>
+<p>ブロックの作成が続いているから、&#8221;head_block_num&#8221;と &#8220;last_irreversible_block_num&#8221;がどんどん増えていく。</p>
+]]></content:encoded>
+							<wfw:commentRss>https://www.eosjapan.org/?feed=rss2&#038;p=469</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Scatterを使用してEOS登録、Transferのコマンド（Binanceへの送金など）</title>
+		<link>https://www.eosjapan.org/?p=360</link>
+				<comments>https://www.eosjapan.org/?p=360#comments</comments>
+				<pubDate>Fri, 13 Jul 2018 07:44:48 +0000</pubDate>
+		<dc:creator><![CDATA[Alex]]></dc:creator>
+				<category><![CDATA[EOS]]></category>
+		<category><![CDATA[チュートリアル]]></category>
+
+		<guid isPermaLink="false">http://www.eosjapan.info/?p=360</guid>
+				<description><![CDATA[あなたのETHアドレスにEOSのトークンが残っていませんか？ ...]]></description>
+								<content:encoded><![CDATA[<p>あなたのETHアドレスにEOSのトークンが残っていませんか？</p>
+<p><img class="alignnone size-full wp-image-378" src="http://www.eosjapan.info/wp-content/uploads/2018/07/test1.png" alt="" width="604" height="494" srcset="https://www.eosjapan.org/wp-content/uploads/2018/07/test1.png 604w, https://www.eosjapan.org/wp-content/uploads/2018/07/test1-300x245.png 300w" sizes="(max-width: 604px) 100vw, 604px" /></p>
+<p><span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">それはもう、永遠に凍結されました。イーサリアム上の</span></span></span>EOS<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">のERC20スマート<b>・</b>コントラクトは停止していますから。あなたの</span></span></span>EOS<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">は今、メインネットにあります。では、そろそろメインネットに登録しましょう。今回の記事で</span></span></span>Scatter<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">を使って</span></span></span>EOS<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">を</span></span></span>Binance<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">（バイナンス）へ送金する方法を載ってみます。後の記事で</span></span></span>cleos<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">（上級者向け）の使い方を徹底的に解説します。（</span></span></span>cleos<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">は</span></span></span>Linux<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">と</span></span></span>Mac<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">のみで使えます。）</span></span></span></p>
+<p><span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">まず、</span></span></span>Scatter<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">のアドオンをあなたのブラウザーにインストールして下さい。</span></span></span><a href="https://get-scatter.com/">https://get-scatter.com/</a></p>
+<p><img class="alignnone size-full wp-image-379" src="http://www.eosjapan.info/wp-content/uploads/2018/07/test2.png" alt="" width="364" height="605" srcset="https://www.eosjapan.org/wp-content/uploads/2018/07/test2.png 364w, https://www.eosjapan.org/wp-content/uploads/2018/07/test2-180x300.png 180w" sizes="(max-width: 364px) 100vw, 364px" /></p>
+<p><span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">パスワードを決めて、</span></span></span>Create New Scatter<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">を選択。</span></span></span></p>
+<p><img class="alignnone size-full wp-image-380" src="http://www.eosjapan.info/wp-content/uploads/2018/07/test3.png" alt="" width="802" height="603" srcset="https://www.eosjapan.org/wp-content/uploads/2018/07/test3.png 802w, https://www.eosjapan.org/wp-content/uploads/2018/07/test3-300x226.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/07/test3-768x577.png 768w" sizes="(max-width: 802px) 100vw, 802px" /></p>
+<p><span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN"><strong>シード言葉を必ずどこかにメモして下さい。</strong>これは</span></span></span>Scatter<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">のリカバリーとなるから誰にも見せないで下さい。（上の写真は例だけです）</span></span></span></p>
+<p><img class="alignnone size-full wp-image-381" src="http://www.eosjapan.info/wp-content/uploads/2018/07/test4.png" alt="" width="803" height="597" srcset="https://www.eosjapan.org/wp-content/uploads/2018/07/test4.png 803w, https://www.eosjapan.org/wp-content/uploads/2018/07/test4-300x223.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/07/test4-768x571.png 768w" sizes="(max-width: 803px) 100vw, 803px" /></p>
+<p><span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">後、</span></span></span>Start Basic Setup<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">を選択。</span></span></span></p>
+<p><img class="alignnone size-full wp-image-382" src="http://www.eosjapan.info/wp-content/uploads/2018/07/test5.png" alt="" width="803" height="600" srcset="https://www.eosjapan.org/wp-content/uploads/2018/07/test5.png 803w, https://www.eosjapan.org/wp-content/uploads/2018/07/test5-300x224.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/07/test5-768x574.png 768w" sizes="(max-width: 803px) 100vw, 803px" /></p>
+<p><span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">では、</span></span></span>EOS<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">のパブリックキーとプライベートキーが必要です。</span></span></span></p>
+<p>EOS<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">を登録した時、こんな風にプライベートキーが現れました。ちゃんとメモしましたか？（登録をしなかった場合は、最後の項目「登録を忘れた場合」を参照して下さい）</span></span></span></p>
+<p><img class="alignnone size-full wp-image-383" src="http://www.eosjapan.info/wp-content/uploads/2018/07/test6.png" alt="" width="953" height="276" srcset="https://www.eosjapan.org/wp-content/uploads/2018/07/test6.png 953w, https://www.eosjapan.org/wp-content/uploads/2018/07/test6-300x87.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/07/test6-768x222.png 768w" sizes="(max-width: 953px) 100vw, 953px" /></p>
+<p><strong><span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">（注意：絶対、自分のプライベートキーを誰にも見せない！しかし今回、ここで特別に例としてバレましたから、先にアクセスした人は</span></span></span>EOS<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">を貰えます。早い者勝ち！）</span></span></span></strong></p>
+<p><span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">では、これを使って</span></span></span>Scatter<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">を用意しましょう。</span></span></span></p>
+<p><img class="alignnone size-full wp-image-384" src="http://www.eosjapan.info/wp-content/uploads/2018/07/test7.png" alt="" width="801" height="598" srcset="https://www.eosjapan.org/wp-content/uploads/2018/07/test7.png 801w, https://www.eosjapan.org/wp-content/uploads/2018/07/test7-300x224.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/07/test7-768x573.png 768w" sizes="(max-width: 801px) 100vw, 801px" /></p>
+<p><span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">上のフィールドは</span></span></span>Scatter<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">のアカウント名だけです。取り敢えずそれを無視して、プライベートキーを下のフィールドにコピペしましょう。パブリックキーが一致したら、準備完了です。</span></span></span></p>
+<p><span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">最後に、</span></span></span>active<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">か</span></span></span>owner<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">のパーミッションを選択。</span></span></span></p>
+<p><img class="alignnone size-full wp-image-385" src="http://www.eosjapan.info/wp-content/uploads/2018/07/test8.png" alt="" width="802" height="598" srcset="https://www.eosjapan.org/wp-content/uploads/2018/07/test8.png 802w, https://www.eosjapan.org/wp-content/uploads/2018/07/test8-300x224.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/07/test8-768x573.png 768w" sizes="(max-width: 802px) 100vw, 802px" /></p>
+<p>active<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">と</span></span></span>owner<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">はほぼ同じ事をできますが、</span></span></span>owner<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">はさらに特別のパーミッションがあります（</span></span></span>Linux<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">や</span></span></span>Mac<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">の</span></span></span>root<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">と同じ）</span></span></span></p>
+<p>owner<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">だけはそのアカウントの所有権、つまりプライベートキーを変えます。</span></span></span></p>
+<p><span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">一つのアカウントは他人の</span></span></span>owner<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">がある場合もあります。他人から</span></span></span>EOS<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">のアカウントを貰う時は、必ずあなたは</span></span></span>owner<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">のパーミッションも貰った事を確かめて下さい。</span></span></span></p>
+<p><span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">ところで、</span></span></span>ETH<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">から登録した場合、</span></span></span>EOS<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">のアカウントの名前は自動的に制作されます。その名前はここで表示されます。（この場合、私は特別に</span></span></span>jedaexample1<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">の名を作った。普通はランダムの12文字です）</span></span></span></p>
+<p><a href="https://eosauthority.com/account">https://eosauthority.com/account</a> <span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">で</span></span></span>EOS<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">か</span></span></span>ETH<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">のパブリックキーをコピペして</span></span></span>EOS<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">のアカウント名を確認する事も出来ます。</span></span></span></p>
+<p><span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">では、</span></span></span><a href="https://eostoolkit.io/">https://eostoolkit.io</a><span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">へ行きましょう。そこで、左の項目から</span></span></span>Attach An Account<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">を選択して下さい。</span></span></span>Scatter<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">は開きます。</span></span></span></p>
+<p><img class="alignnone size-full wp-image-386" src="http://www.eosjapan.info/wp-content/uploads/2018/07/test9.png" alt="" width="1858" height="962" srcset="https://www.eosjapan.org/wp-content/uploads/2018/07/test9.png 1858w, https://www.eosjapan.org/wp-content/uploads/2018/07/test9-300x155.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/07/test9-768x398.png 768w, https://www.eosjapan.org/wp-content/uploads/2018/07/test9-1024x530.png 1024w" sizes="(max-width: 1858px) 100vw, 1858px" /></p>
+<p><span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">自分の</span></span></span>EOS Account<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">を</span></span></span>Select Identity<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">の青いボタンでセレクトして、そして</span></span></span>Accept<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">をクリックして下さい。これで</span></span></span>eostoolkit<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">に</span></span></span>Scatter<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">のアクセス許可を与えます。</span></span></span></p>
+<p>EOS<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">を使う前に、まず</span></span></span>CPU, Bandwidth, RAM<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">の</span></span></span>3<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">つの要素が必要です。これは</span></span></span>EOS<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">で予約する。</span></span></span></p>
+<p><span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">最初に登録した時、普通にこれらは既に予約済みです。そうでなければ、そのアカウントは使えない状態に済んでしまいます。</span></span></span></p>
+<p><a href="http://eosflare.io/">http</a><a href="http://eosflare.io/">s</a><a href="http://eosflare.io/">://eosflare.io</a> <span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">で自分のアカウントを簡単に確認できます。ご覧の通り、</span></span></span>CPU<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">は</span></span></span>1EOS<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">、</span></span></span>Bandwidth<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">は</span></span></span>1EOS<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">、</span></span></span>RAM<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">は</span></span></span>4KB<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">となっています。</span></span></span></p>
+<p><img class="alignnone size-full wp-image-388" src="http://www.eosjapan.info/wp-content/uploads/2018/07/test10.png" alt="" width="1839" height="490" srcset="https://www.eosjapan.org/wp-content/uploads/2018/07/test10.png 1839w, https://www.eosjapan.org/wp-content/uploads/2018/07/test10-300x80.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/07/test10-768x205.png 768w, https://www.eosjapan.org/wp-content/uploads/2018/07/test10-1024x273.png 1024w" sizes="(max-width: 1839px) 100vw, 1839px" /></p>
+<p>EOS<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">を使うには、最低限として</span></span></span>0.2EOS<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">並みの</span></span></span>CPU<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">、</span></span></span>0.2EOS<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">並みの</span></span></span>Bandwidth<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">、そして</span></span></span>RAM<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">の</span></span></span>4KB<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">を推薦します。それ以下の数は、アカウントの使える状態は保証できませんなのでご注意下さい。でも使えないままに落ちてしまったら、他の人から救出を頼めます。</span></span></span></p>
+<p><span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">では、要らない資源から</span></span></span>EOS<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">を解凍しましょう。</span></span></span>eostoolkit<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">の左の項目から、</span></span></span>Manage Account &gt; Undelegate (Unstake)<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">を選択して下さい。</span></span></span></p>
+<p><img class="alignnone size-full wp-image-389" src="http://www.eosjapan.info/wp-content/uploads/2018/07/test11.png" alt="" width="1859" height="957" srcset="https://www.eosjapan.org/wp-content/uploads/2018/07/test11.png 1859w, https://www.eosjapan.org/wp-content/uploads/2018/07/test11-300x154.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/07/test11-768x395.png 768w, https://www.eosjapan.org/wp-content/uploads/2018/07/test11-1024x527.png 1024w" sizes="(max-width: 1859px) 100vw, 1859px" /></p>
+<p>jedaexample1<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">の場合、せめて使える状態を保つ為以外の全ての</span></span></span>EOS<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">を送金したいのなら、上記のように記入すればいいでしょう。</span></span></span>CPU<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">と</span></span></span>Bandwidth<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">の</span></span></span>0.2EOS<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">を残します。</span></span></span></p>
+<p><span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">取引をする度に、</span></span></span>Scatter<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">は一度開きます。内容をよく確かめてから、</span></span></span>Accept<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">をクリックすれば、取引が実行されます。</span></span></span></p>
+<p><img class="alignnone size-full wp-image-391" src="http://www.eosjapan.info/wp-content/uploads/2018/07/test12.png" alt="" width="1858" height="961" srcset="https://www.eosjapan.org/wp-content/uploads/2018/07/test12.png 1858w, https://www.eosjapan.org/wp-content/uploads/2018/07/test12-300x155.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/07/test12-768x397.png 768w, https://www.eosjapan.org/wp-content/uploads/2018/07/test12-1024x530.png 1024w" sizes="(max-width: 1858px) 100vw, 1858px" /></p>
+<p><span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN"><b>解凍はまだ終わっていません。予約から解凍するには、</b></span></span></span><b>3</b><span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN"><b>日間の解凍期間を待つ必要があります。</b></span></span></span></p>
+<p>3<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">日が過ぎてから、最後に解凍するには、</span></span></span>refund<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">を行いましょう。</span></span></span></p>
+<p><img class="alignnone size-full wp-image-392" src="http://www.eosjapan.info/wp-content/uploads/2018/07/test13.png" alt="" width="1856" height="954" srcset="https://www.eosjapan.org/wp-content/uploads/2018/07/test13.png 1856w, https://www.eosjapan.org/wp-content/uploads/2018/07/test13-300x154.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/07/test13-768x395.png 768w, https://www.eosjapan.org/wp-content/uploads/2018/07/test13-1024x526.png 1024w" sizes="(max-width: 1856px) 100vw, 1856px" /></p>
+<p>refund<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">を実行する前に必ず、</span></span></span>72<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">時間が過ぎた事を確かめてください。</span></span></span></p>
+<p><span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">これでようやく解凍済みです。送金や</span></span></span>RAM<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">売買を行うようになりました。</span></span></span></p>
+<p><span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">ここからBinanceへ送金しましょう。まずは、</span></span></span>Transfer EOS<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">（送金）を選択。</span></span></span></p>
+<p><img class="alignnone size-full wp-image-393" src="http://www.eosjapan.info/wp-content/uploads/2018/07/test14.png" alt="" width="845" height="732" srcset="https://www.eosjapan.org/wp-content/uploads/2018/07/test14.png 845w, https://www.eosjapan.org/wp-content/uploads/2018/07/test14-300x260.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/07/test14-768x665.png 768w" sizes="(max-width: 845px) 100vw, 845px" /></p>
+<p><img class="alignnone size-full wp-image-394" src="http://www.eosjapan.info/wp-content/uploads/2018/07/test15.png" alt="" width="1313" height="760" srcset="https://www.eosjapan.org/wp-content/uploads/2018/07/test15.png 1313w, https://www.eosjapan.org/wp-content/uploads/2018/07/test15-300x174.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/07/test15-768x445.png 768w, https://www.eosjapan.org/wp-content/uploads/2018/07/test15-1024x593.png 1024w" sizes="(max-width: 1313px) 100vw, 1313px" /></p>
+<p><span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">・</span></span></span>Binance<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">の</span></span></span>EOS Deposit Address<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">を、</span></span></span>EOSToolkit<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">の</span></span></span>Recepient<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">に</span></span></span></p>
+<p><span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">・</span></span></span>Binance<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">の</span></span></span>EOS Deposit MEMO<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">を、</span></span></span>EOSToolkit<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">の</span></span></span>Memo<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">に<b>（</b></span></span></span><b>Binance</b><span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN"><b>へ送金する時は必ず</b></span></span></span><b>MEMO</b><span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN"><b>を忘れないで）</b></span></span></span></p>
+<p><span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">・</span></span></span>Sender<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">は、自分の</span></span></span>EOS<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">のアカウント名前。（私の場合は</span></span></span>jedaexample1<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">）</span></span></span></p>
+<p><span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">・そして</span></span></span>Quantity<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">は送金したいトークンの数</span></span></span></p>
+<p><span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">最後に、</span></span></span>eostoolkit<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">で内容をよく確認して、後は</span></span></span>Scatter<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">で</span></span></span>SEND<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">してゴー！</span></span></span></p>
+<p><span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">というわけです。</span></span></span></p>
+<p>&nbsp;</p>
+<p><span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN"><b>登録を忘れた場合</b></span></span></span></p>
+<p>ETH<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">アドレスに</span></span></span>EOS<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">があるのに、キーの登録を忘れた、それとも失敗におわっちゃったかも知れません。</span></span></span></p>
+<p><span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">そんなあなたも、</span></span></span>EOS<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">に登録してメインネットを使えます。</span></span></span></p>
+<p>Scatter<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">を開いて、</span></span></span>Key Pairs<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">へ。</span></span></span></p>
+<p><img class="alignnone size-full wp-image-395" src="http://www.eosjapan.info/wp-content/uploads/2018/07/test16.png" alt="" width="364" height="603" srcset="https://www.eosjapan.org/wp-content/uploads/2018/07/test16.png 364w, https://www.eosjapan.org/wp-content/uploads/2018/07/test16-181x300.png 181w" sizes="(max-width: 364px) 100vw, 364px" /></p>
+<p><img class="alignnone size-full wp-image-396" src="http://www.eosjapan.info/wp-content/uploads/2018/07/test17.png" alt="" width="366" height="605" srcset="https://www.eosjapan.org/wp-content/uploads/2018/07/test17.png 366w, https://www.eosjapan.org/wp-content/uploads/2018/07/test17-181x300.png 181w" sizes="(max-width: 366px) 100vw, 366px" /></p>
+<p><span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">右上の青い</span></span></span>New<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">ボタンをクリックして。</span></span></span></p>
+<p><span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">最後に、</span></span></span>ETH<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">のプライベートキーを入力してから、上のメニューで</span></span></span>ETH<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">を</span></span></span>EOS<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">に変えて下さい。</span></span></span></p>
+<p>ETH<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">のキーは</span></span></span>EOS<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">のキーに自動的に変換します。それからセーブできます。</span></span></span></p>
+<p><img class="alignnone size-full wp-image-397" src="http://www.eosjapan.info/wp-content/uploads/2018/07/test18.png" alt="" width="796" height="604" srcset="https://www.eosjapan.org/wp-content/uploads/2018/07/test18.png 796w, https://www.eosjapan.org/wp-content/uploads/2018/07/test18-300x228.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/07/test18-768x583.png 768w" sizes="(max-width: 796px) 100vw, 796px" /></p>
+<p><span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">これで、最初に未登録はずだったの</span></span></span>EOS<span style="font-family: Noto Sans CJK SC Regular;"><span style="font-size: small;"><span lang="zh-CN">は使えるようになりました。</span></span></span></p>
+<p><strong>ご不明点等がありましたら、是非ともコメントして下さい。</strong></p>
+]]></content:encoded>
+							<wfw:commentRss>https://www.eosjapan.org/?feed=rss2&#038;p=360</wfw:commentRss>
+		<slash:comments>9</slash:comments>
+							</item>
+	</channel>
+</rss>

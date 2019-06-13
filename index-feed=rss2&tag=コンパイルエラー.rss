@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>コンパイルエラー &#8211; JEDA</title>
+	<atom:link href="https://www.eosjapan.org/?feed=rss2&#038;tag=%e3%82%b3%e3%83%b3%e3%83%91%e3%82%a4%e3%83%ab%e3%82%a8%e3%83%a9%e3%83%bc" rel="self" type="application/rss+xml" />
+	<link>https://www.eosjapan.org</link>
+	<description>一般社団法人　日本EOS ​開発者協会</description>
+	<lastBuildDate>
+	Tue, 19 Feb 2019 05:29:33 +0000	</lastBuildDate>
+	<language>ja</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+
+<image>
+	<url>https://www.eosjapan.org/wp-content/uploads/2018/04/cropped-logo-1-32x32.png</url>
+	<title>コンパイルエラー &#8211; JEDA</title>
+	<link>https://www.eosjapan.org</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>スマートコントラクトコンパイルエラー fatal error: &#8216;eosiolib/eosio.hpp&#8217; file not found 解決方法</title>
+		<link>https://www.eosjapan.org/?p=486</link>
+				<comments>https://www.eosjapan.org/?p=486#respond</comments>
+				<pubDate>Tue, 11 Sep 2018 00:19:30 +0000</pubDate>
+		<dc:creator><![CDATA[Singularity Technology]]></dc:creator>
+				<category><![CDATA[EOS]]></category>
+		<category><![CDATA[チュートリアル]]></category>
+		<category><![CDATA[eosiocpp]]></category>
+		<category><![CDATA[fatal error: 'eosiolib/eosio.hpp' file not found]]></category>
+		<category><![CDATA[コンパイルエラー]]></category>
+		<category><![CDATA[スマートコントラクト]]></category>
+
+		<guid isPermaLink="false">https://www.eosjapan.org/?p=486</guid>
+				<description><![CDATA[最新版のEOSをインストールしました。早速、スマートコントラ ...]]></description>
+								<content:encoded><![CDATA[<p>最新版のEOSをインストールしました。早速、スマートコントラクトを試作し、コンパイルするとエラーが出ました。</p>
+<p class="media-heading"><span class="title" style="color: #ff0000">fatal error: &#8216;eosiolib/eosio.hpp&#8217; file not found 。</span></p>
+<p>ネットでいろいろ探しまして、解決方法がなさそうです。EOSを最インストールしても、解決できない。</p>
+<p>自力しかないと覚悟してから、eosiocppファイルから調査を始めました。</p>
+<h2>１、ファイルの格納パス</h2>
+<p>eosiocppは下記二つ箇所に格納されています。</p>
+<p>・XXXX/eos/build/tools/</p>
+<p>・/usr/local/eosio/bin</p>
+<p>中身が全く同じです。bashのスクリプトであり。</p>
+<h2>２、簡単に分析しましょう。</h2>
+<p><img class="alignnone size-medium wp-image-487" src="https://www.eosjapan.org/wp-content/uploads/2018/09/84b4af99-065f-4981-ba46-fa0e4e8d20f7-300x80.png" alt="" width="300" height="80" srcset="https://www.eosjapan.org/wp-content/uploads/2018/09/84b4af99-065f-4981-ba46-fa0e4e8d20f7-300x80.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/09/84b4af99-065f-4981-ba46-fa0e4e8d20f7.png 616w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>二行目の</p>
+<p>EOSIO_BIN_INSTALL_DIR=&#8217;dirname $0&#8242;</p>
+<p>を見た瞬間、EOSは大丈夫なの？？？</p>
+<p>EOSのインストールパスの取得方法は意外にもコマンドの実行パスから判明するようです。</p>
+<p>綺麗に直そうとしても、解決することを優先にして、パスをハードコーティングしました。</p>
+<h2>３、パスの取得方法を書き直す</h2>
+<p>EOSIO_BIN_INSTALL_DIRを使わず、捨てます。</p>
+<p>EOSIO_INSTALL_DIRにEOSのインストールパスを直接に設定する。</p>
+<p><span class="c" style="color: #0000ff">#EOSIO_BIN_INSTALL_DIR=`dirname $0` </span></p>
+<p><span class="c" style="color: #0000ff">#if [ &#8220;${EOSIO_BIN_INSTALL_DIR}&#8221; == &#8220;.&#8221; ]; then</span></p>
+<p><span class="c" style="color: #0000ff"> # EOSIO_BIN_INSTALL_DIR=`pwd`</span></p>
+<p><span style="color: #0000ff"> <span class="c">#fi</span> <span class="c">#EOSIO_INSTALL_DIR=`dirname ${EOSIO_BIN_INSTALL_DIR}`</span></span></p>
+<p><span style="color: #0000ff"> <span class="nv">EOSIO_INSTALL_DIR</span><span class="o">=</span><span class="s2">&#8220;/<span style="color: #ff0000">your eos install director</span>/eos&#8221;</span></span></p>
+<h2>４、修正後のイメージ</h2>
+<p>直す方針が決めたら、コンパイルしながら、足りないライブラリや間違いパスなどどんどん直して、eosiocppは下記通りになりました。</p>
+<p><em><span style="color: #ff0000">ご注意：</span></em></p>
+<p><em><span style="color: #ff0000">個人環境のパスがいくつありまして、そのまま使えないです。</span></em></p>
+<p><em><span style="color: #ff0000">比較ツールを利用して、ローカルのをマージする必要。</span></em></p>
+<p>#!/bin/bash</p>
+<p>#EOSIO_BIN_INSTALL_DIR=`dirname $0`<br />
+#if [ &#8220;${EOSIO_BIN_INSTALL_DIR}&#8221; == &#8220;.&#8221; ]; then<br />
+# EOSIO_BIN_INSTALL_DIR=`pwd`<br />
+#fi<br />
+#EOSIO_INSTALL_DIR=`dirname ${EOSIO_BIN_INSTALL_DIR}`<br />
+EOSIO_INSTALL_DIR=&#8221;/home/yaoyh/app/eos&#8221;</p>
+<p>echo $EOSIO_INSTALL_DIR</p>
+<p>ABIGEN=${EOSIO_INSTALL_DIR}/build/programs/eosio-abigen/eosio-abigen<br />
+BOOST_INCLUDE_DIR=/home/yaoyh/opt/boost/include<br />
+function copy_skeleton {<br />
+set -e<br />
+# cp -r &#8220;${EOSIO_INSTALL_DIR}/share/eosio/skeleton/.&#8221; $newname<br />
+cp -r &#8220;${EOSIO_INSTALL_DIR}/contracts/skeleton/.&#8221; $newname</p>
+<p>for file in $(find ./$newname -name &#8216;skeleton.*&#8217;)<br />
+do<br />
+newfile=`echo $file | sed &#8216;s/skeleton\./'&#8221;$newname&#8221;&#8216;./&#8217;`<br />
+# echo mv &#8220;${file}&#8221; &#8220;${newfile}&#8221;<br />
+mv &#8220;${file}&#8221; &#8220;${newfile}&#8221;<br />
+exp=s/skeleton/${newname}/g<br />
+# echo sed -i ${exp} ${newfile}<br />
+sed ${exp} ${newfile} &gt; ${newfile}1<br />
+mv ${newfile}1 ${newfile}<br />
+done<br />
+echo &#8220;created $newname from skeleton&#8221;<br />
+set +e<br />
+}</p>
+<p>function build_contract {<br />
+set -e<br />
+workdir=`mktemp -d`</p>
+<p>if [[ ${VERBOSE} == &#8220;1&#8221; ]]; then<br />
+PRINT_CMDS=&#8221;set -x&#8221;<br />
+fi</p>
+<p>($PRINT_CMDS; mkdir $workdir/built)</p>
+<p>for file in $@; do<br />
+name=`basename $file`<br />
+filePath=`dirname $file`</p>
+<p>($PRINT_CMDS; /home/yaoyh/opt/wasm/bin/clang -emit-llvm -O3 &#8211;std=c++14 &#8211;target=wasm32 -nostdinc \<br />
+-DBOOST_DISABLE_ASSERTS -DBOOST_EXCEPTION_DISABLE \<br />
+-nostdlib -nostdlibinc -ffreestanding -nostdlib -fno-threadsafe-statics -fno-rtti \<br />
+-fno-exceptions -I ${EOSIO_INSTALL_DIR}/include \<br />
+-I${EOSIO_INSTALL_DIR}/contracts/libc++/upstream/include \<br />
+-I${EOSIO_INSTALL_DIR}/contracts/musl/upstream/include \<br />
+-I${BOOST_INCLUDE_DIR} \<br />
+-I $filePath \<br />
+-I${EOSIO_INSTALL_DIR}/contracts \<br />
+-I${EOSIO_INSTALL_DIR}/externals/magic_get/include \<br />
+${EOSIOCPP_CFLAGS} \<br />
+-c $file -o $workdir/built/$name<br />
+)</p>
+<p>done</p>
+<p>($PRINT_CMDS; /home/yaoyh/opt/wasm/bin/llvm-link -only-needed -o $workdir/linked.bc $workdir/built/* \<br />
+${EOSIO_INSTALL_DIR}/build/contracts/eosiolib/eosiolib.bc \<br />
+${EOSIO_INSTALL_DIR}/build/contracts/libc++/libc++.bc \<br />
+${EOSIO_INSTALL_DIR}/build/contracts/musl/libc.bc</p>
+<p>)<br />
+($PRINT_CMDS; /home/yaoyh/opt/wasm/bin/llc -thread-model=single &#8211;asm-verbose=false -o $workdir/assembly.s $workdir/linked.bc)<br />
+($PRINT_CMDS; ${EOSIO_INSTALL_DIR}/build/externals/binaryen/bin/eosio-s2wasm -o $outname -s 16384 $workdir/assembly.s)<br />
+($PRINT_CMDS; ${EOSIO_INSTALL_DIR}/build/libraries/wasm-jit/Source/Programs/eosio-wast2wasm $outname ${outname%.*}.wasm -n)</p>
+<p>($PRINT_CMDS; rm -rf $workdir)<br />
+set +e<br />
+}</p>
+<p>function generate_abi {</p>
+<p>if [[ ! -e &#8220;$1&#8221; ]]; then<br />
+echo &#8220;You must specify a file&#8221;<br />
+exit 1<br />
+fi</p>
+<p>context_folder=$(cd &#8220;$(dirname &#8220;$1&#8243;)&#8221; ; pwd -P)</p>
+<p>${ABIGEN} -extra-arg=-c -extra-arg=&#8211;std=c++14 -extra-arg=&#8211;target=wasm32 \<br />
+-extra-arg=-nostdinc -extra-arg=-nostdinc++ -extra-arg=-DABIGEN \<br />
+-extra-arg=-I${EOSIO_INSTALL_DIR}/contracts/libc++/upstream/include \<br />
+-extra-arg=-I${EOSIO_INSTALL_DIR}/contracts/musl/upstream/include \<br />
+-extra-arg=-I${BOOST_INCLUDE_DIR} \<br />
+-extra-arg=-I${EOSIO_INSTALL_DIR}/contracts \<br />
+-extra-arg=-I${EOSIO_INSTALL_DIR}/externals/magic_get/include \<br />
+-extra-arg=${EOSIOCPP_CFLAGS} \<br />
+-extra-arg=-I${EOSIO_INSTALL_DIR}/include -extra-arg=-I$context_folder \<br />
+-extra-arg=-fparse-all-comments -destination-file=${outname} -verbose=0 \<br />
+-context=$context_folder $1</p>
+<p>if [ &#8220;$?&#8221; -ne 0 ]; then<br />
+exit 1<br />
+fi</p>
+<p>echo &#8220;Generated ${outname} &#8230;&#8221;<br />
+}</p>
+<p>function print_help {<br />
+echo &#8220;Usage: $0 -o output.wast contract.cpp [other.cpp &#8230;]&#8221;<br />
+echo &#8221; OR&#8221;<br />
+echo &#8221; $0 -n mycontract&#8221;<br />
+echo &#8221; OR&#8221;<br />
+echo &#8221; $0 -g contract.abi types.hpp&#8221;<br />
+echo<br />
+echo &#8220;Options:&#8221;<br />
+echo &#8221; -n | &#8211;newcontract [name]&#8221;<br />
+echo &#8221; Create a new contract in the [name] folder, based on the example contract&#8221;<br />
+echo &#8221; OR&#8221;<br />
+echo &#8221; -o | &#8211;outname [output.wast] [input.cpp &#8230;]&#8221;<br />
+echo &#8221; Generate the wast output file based on input cpp files&#8221;<br />
+echo &#8221; The wasm output will also be created as output.wasm&#8221;<br />
+echo &#8221; OR&#8221;<br />
+echo &#8221; -g | &#8211;genabi contract.abi types.hpp&#8221;<br />
+echo &#8221; Generate the ABI specification file [EXPERIMENTAL]&#8221;<br />
+}</p>
+<p>command=&#8221;&#8221;</p>
+<p>while [[ $# -gt 1 ]]<br />
+do<br />
+key=&#8221;$1&#8243;</p>
+<p>case $key in<br />
+-h|&#8211;help)<br />
+print_help<br />
+break;<br />
+;;<br />
+-n|&#8211;newcontract)<br />
+newname=&#8221;$2&#8243;<br />
+command=&#8221;newcontract&#8221;<br />
+shift 2<br />
+break<br />
+;;<br />
+-o|&#8211;outname)<br />
+outname=&#8221;$2&#8243;<br />
+command=&#8221;outname&#8221;<br />
+shift 2<br />
+break<br />
+;;<br />
+-g|&#8211;genabi)<br />
+outname=&#8221;$2&#8243;<br />
+command=&#8221;genabi&#8221;<br />
+shift 2<br />
+;;<br />
+*)<br />
+echo &#8220;Unrecognized option: $1&#8221;<br />
+exit 1<br />
+;;<br />
+esac<br />
+done</p>
+<p>if [[ &#8220;outname&#8221; == &#8220;$command&#8221; ]]; then<br />
+build_contract $@<br />
+elif [[ &#8220;newcontract&#8221; == &#8220;$command&#8221; ]]; then<br />
+copy_skeleton<br />
+elif [[ &#8220;genabi&#8221; == &#8220;$command&#8221; ]]; then<br />
+generate_abi $@<br />
+else<br />
+print_help<br />
+exit 1<br />
+fi</p>
+]]></content:encoded>
+							<wfw:commentRss>https://www.eosjapan.org/?feed=rss2&#038;p=486</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

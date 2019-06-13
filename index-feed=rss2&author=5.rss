@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Mariko &#8211; JEDA</title>
+	<atom:link href="https://www.eosjapan.org/?feed=rss2&#038;author=5" rel="self" type="application/rss+xml" />
+	<link>https://www.eosjapan.org</link>
+	<description>一般社団法人　日本EOS ​開発者協会</description>
+	<lastBuildDate>
+	Tue, 19 Feb 2019 05:29:33 +0000	</lastBuildDate>
+	<language>ja</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+
+<image>
+	<url>https://www.eosjapan.org/wp-content/uploads/2018/04/cropped-logo-1-32x32.png</url>
+	<title>Mariko &#8211; JEDA</title>
+	<link>https://www.eosjapan.org</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>ブリッジレポート　#1</title>
+		<link>https://www.eosjapan.org/?p=561</link>
+				<comments>https://www.eosjapan.org/?p=561#respond</comments>
+				<pubDate>Tue, 13 Nov 2018 04:21:17 +0000</pubDate>
+		<dc:creator><![CDATA[Mariko]]></dc:creator>
+				<category><![CDATA[EOS]]></category>
+
+		<guid isPermaLink="false">https://www.eosjapan.org/?p=561</guid>
+				<description><![CDATA[ブリッジレポートの初版へようこそ。 EOSはメインネットへ移 ...]]></description>
+								<content:encoded><![CDATA[<p><img class="alignnone size-medium wp-image-562" src="https://www.eosjapan.org/wp-content/uploads/2018/11/スクリーンショット-2018-11-13-11.34.22-300x124.png" alt="" width="300" height="124" srcset="https://www.eosjapan.org/wp-content/uploads/2018/11/スクリーンショット-2018-11-13-11.34.22-300x124.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/11/スクリーンショット-2018-11-13-11.34.22.png 698w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>ブリッジレポートの初版へようこそ。</p>
+<p>EOSはメインネットへ移行してからまだ４カ月しか稼働していませんが、EOSエコシステムは活発に活動しています。<br />
+開発はウォレット、dApps、インフラストラクチャーと速やかに進んでおり、同時に世界中のイベントがEOSネットワークを普及させています。<br />
+そしてネットワークはさらに記録的な3,996TPSを達成しました。</p>
+<p>&nbsp;</p>
+<p>EOSはスケーラブルなベースレイヤーのブロックチェーンインフラの標準を引き続き設定しています。</p>
+<p>&nbsp;</p>
+<p>ブリッジレポートは世界中のEOSコミュニティからの最新情報、ニュース、最新のBP革新、地域コミュニティの意見を集約した隔週リリースです。<br />
+リンク財団（Link Foundation）が英語版と中国版のレポートをリリースするとの予定です。各国の言語でレポートを翻訳して公開する国際パートナーとともに、より統一されたEOSコミュニティを構築するために文化的障壁を橋渡ししています。</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>【西部のEOS】</h3>
+<p>EOSアルゼンチンとEOSオーソリティが未登録のトークンを取り戻しするツールをリリース<br />
+メインネットが起動したとき、総EOSウォレットの10.7％を占める19,587件以上のアカウントはEOSアドレスを登録していませんでした。EOSアルゼンチンとEOSオーソリティはこれらのアカウントがERC-20 EOSトークンをメインネット上のネイティブEOSに交換できるようにするソリューションを開発しました。彼らの提案が受け入れられれば、シンプルなGUIはトークンをEOSブロックチェーンの転送プロセスを簡単にします。<br />
+<a href="https://eosauthority.com/unregistered">未登録のトークンを取り戻す</a></p>
+<p><img class="alignnone size-medium wp-image-563" src="https://www.eosjapan.org/wp-content/uploads/2018/11/スクリーンショット-2018-11-13-11.42.56-300x150.png" alt="" width="300" height="150" srcset="https://www.eosjapan.org/wp-content/uploads/2018/11/スクリーンショット-2018-11-13-11.42.56-300x150.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/11/スクリーンショット-2018-11-13-11.42.56.png 698w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>&nbsp;</p>
+<h3>【EOS Tribeが包括的な開発者リソースをリリース】</h3>
+<p>EOS Tribeはデンバーでの最初の開発者ワークショップを持って、散在するすべての開発ツールをEOSブロックチェーン用の包括的な開発者リソースガイドにまとめました。<br />
+<a href="https://steemit.com/eos/@eostribe/the-big-list-of-eos-developer-resources">EOS Tribe開発者のリソース</a></p>
+<p><img class="alignnone size-medium wp-image-565" src="https://www.eosjapan.org/wp-content/uploads/2018/11/スクリーンショット-2018-11-13-12.12.42-300x134.png" alt="" width="300" height="134" srcset="https://www.eosjapan.org/wp-content/uploads/2018/11/スクリーンショット-2018-11-13-12.12.42-300x134.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/11/スクリーンショット-2018-11-13-12.12.42.png 696w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>&nbsp;</p>
+<h3>【EOS ReachがAndroid向けの分散型ウォレットを構築】</h3>
+<p>この新しいオープンソースウォレットでユーザーがbpエンドポイントの選択、アカウントを見る、トークンの転送、履歴アクションの表示、アカウントリソースの表示、リソースの委任/非委任、RAMの購入/販売、ブロックプロデューサーとプロキシの投票ができます。 <a href="https://play.google.com/store/apps/details?id=com.memtrip.eosreach">EOS REACH EOS Wallet</a></p>
+<p><img class="alignnone size-medium wp-image-566" src="https://www.eosjapan.org/wp-content/uploads/2018/11/スクリーンショット-2018-11-13-12.15.22-300x104.png" alt="" width="300" height="104" srcset="https://www.eosjapan.org/wp-content/uploads/2018/11/スクリーンショット-2018-11-13-12.15.22-300x104.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/11/スクリーンショット-2018-11-13-12.15.22.png 720w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>&nbsp;</p>
+<h3>【Liquid EOSとBancorがEOSトークンの分散型流動性ソリューションであるBancorXを起動】</h3>
+<p>スマートコントラクトに対するERC-20トークンを交換する<a href="https://eos.bancor.network/">Bancor</a>のリレー技術はEOSチェーンに移植されました。ユーザーはBancorの流動性ネットワーク上でEOSをトラストレス交換ができるようになります。EOSネットワークに移行するとトランザクション時間が1秒、トランザクションコストはなく、フロントランニングリスクはなく、Bancor独自のトークン交換機能が大幅にアップグレードされます。<br />
+アップデートの完全リストについては<a href="https://medium.com/@liquideos/liquideos-innovation-report-ed02b3e43af9">Liquid EOSイノベーションレポート</a>をご覧ください。</p>
+<p><img class="alignnone size-medium wp-image-567" src="https://www.eosjapan.org/wp-content/uploads/2018/11/スクリーンショット-2018-11-13-11.44.49-300x132.png" alt="" width="300" height="132" srcset="https://www.eosjapan.org/wp-content/uploads/2018/11/スクリーンショット-2018-11-13-11.44.49-300x132.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/11/スクリーンショット-2018-11-13-11.44.49.png 699w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>&nbsp;</p>
+<h3>【shEOSが開発したEOS21はERC-20トークンをEOSチェーンにテレポートします】</h3>
+<p>既存のプロジェクトを簡単にイーサリアムからEOSに移行することはエコシステムの成長にとって重要な役割を果たします。そのために、shEOSチームはERC-20トークンをEOSチェーンに転送プロセスの熟練度を上げるため、エアドロップで一般的に使用されるのと同じ「スナップショット」技術を拡張した<a href="https://sheos-org.github.io/eos21/">EOS21</a>を開発しました。EOS21はオープンソースプロジェクトであり、コミュニティはコードのカスタマイズ、フォーク、および使用を推奨されています。<a href="https://steemit.com/ethereum/@sheos/the-eos21-protocol-teleport-your-erc20-tokens-to-eos">発表はこちら</a></p>
+<p><img class="alignnone size-medium wp-image-569" src="https://www.eosjapan.org/wp-content/uploads/2018/11/スクリーンショット-2018-11-13-11.45.03-300x107.png" alt="" width="300" height="107" srcset="https://www.eosjapan.org/wp-content/uploads/2018/11/スクリーンショット-2018-11-13-11.45.03-300x107.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/11/スクリーンショット-2018-11-13-11.45.03.png 699w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>&nbsp;</p>
+<h3>【EOS ニューヨークがEOS Chargeを起動】</h3>
+<p>EOS Chargeを使用すると、ユーザーはEOSメインネット上で実行できる多くのアクションのカスタムレポートを受け取ることができます。CPU/NETリソースを手動で計算する必要が無くなりました。<br />
+<a href="https://www.eoscharge.io/">EOS Chargeのウェブサイト</a></p>
+<p><img class="alignnone size-medium wp-image-570" src="https://www.eosjapan.org/wp-content/uploads/2018/11/スクリーンショット-2018-11-13-12.47.33-300x151.png" alt="" width="300" height="151" srcset="https://www.eosjapan.org/wp-content/uploads/2018/11/スクリーンショット-2018-11-13-12.47.33-300x150.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/11/スクリーンショット-2018-11-13-12.47.33.png 732w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h3>【東部のEOS】</h3>
+<p>日本<br />
+<strong>教育と訓練が日本に来る</strong><br />
+JEDAとEOSLaomaoは他の日本のブロックチェーンコミュニティと協力して、EOS普及活動と日本人コミュニティの開発者育成活動を開始しています。まだEOSの申請書が日本の金融庁に認可されていないため、日本の投資家や開発者はEOSの知識の範囲がかなり限られています。日本市場はまだ発展途上であり、EOSチェーン拡大の機会に満ちています。JEDAとEOSLaomaoは投資家と開発者とのミートアップを行い、意識を高めあいながらコミュニティ間のパートナーシップを構築します。<br />
+EOSの知識を普及させ、EOSのエコシステムを促進し、日本の投資家がEOSを理解し、成長に向けて参加していくことを目標としています。</p>
+<p>「gm3dcnqgenes」盗難事件の時にJEDAは日本のコミュニティに旨を警告し、日本のコミュニティにプライベートキーの安全性に注意を喚起するよう促した。我々はECAFと緊密に協力してブラックリストに関連するアカウントを追加し、被害者の資産損失を最小限に抑えました。</p>
+<p><strong>JEDA（日本）からのアップデート</strong><br />
+• JEDAはWeiboのアカウントを開いてJEDAを中国のコミュニティに紹介する<br />
+• JEDAは「創造性」提案を見直しと承認をした<br />
+• JEDAはCPUをアップグレードしました<br />
+• 11月10日、11日にDoraHacks グローバルハッカソンシリーズ@東京が開催され、<br />
+JEDAは技術パートナーとして参加<br />
+• 日本の金融庁はレビューのためのコインリスティングを開く可能性があります</p>
+<p>&nbsp;</p>
+<p>韓国<br />
+<strong>韓国のイベントサーキットが熱くなる</strong><br />
+• ABF Korea: Asia Blockchain＆Fintechカンファレンスが10月末に開催される予定で、ソウルメトロポリタン政府＆チェーンパートナーズと共同開催<br />
+• dApp Festa: ABOSの一環として、EOSYSはKOREOS（韓国最大のEOSコミュニティ）とDApp Festaを主催</p>
+<p>ソウルからの新ウオレットがリリース<br />
+Nova Androidリリース：UXに焦点を当てたウオレットNOVAはAndroid版<a href="https://play.google.com/store/apps/details?id=io.eosnova.wallet.android">Nova Wallet</a>をリリースした</p>
+<p><img class="alignnone size-medium wp-image-571" src="https://www.eosjapan.org/wp-content/uploads/2018/11/スクリーンショット-2018-11-13-12.58.07-300x94.png" alt="" width="300" height="94" srcset="https://www.eosjapan.org/wp-content/uploads/2018/11/スクリーンショット-2018-11-13-12.58.07-300x94.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/11/スクリーンショット-2018-11-13-12.58.07.png 735w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>&nbsp;</p>
+<h3>【EOSYSが分散アプリケーションの高速化のためにdApp Studioを起動】</h3>
+<p>EOSYSが起動したdApp Studioは、教育と訓練を通じてdAppエコシステムを育成することを目指しています。彼らは4,500のEOSが獲得できる<a href="https://medium.com/eosys/the-1st-dapp-contest-d2b714a90adc">最初のdApp開発コンテスト</a>を開催しています。</p>
+<p><img class="alignnone size-medium wp-image-572" src="https://www.eosjapan.org/wp-content/uploads/2018/11/スクリーンショット-2018-11-13-11.46.13-300x173.png" alt="" width="300" height="173" srcset="https://www.eosjapan.org/wp-content/uploads/2018/11/スクリーンショット-2018-11-13-11.46.13-300x173.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/11/スクリーンショット-2018-11-13-11.46.13.png 699w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>&nbsp;</p>
+<p>中国<br />
+<strong>EOS Gravity とEOS BeijingはすべてのものEOSのためのワンストップショップをリリースするため手を組む</strong><br />
+EOSのためのワンストップナビゲーションウェブサイトShensi.comは、EOS GravityとEOS Beijingによって正式に開始されました。Shensiは市場動向、BPツールを含むメインネット監視、ニュースチャンネルを提供し、EOSツールと中国語と英語の情報も提供しています。<br />
+<a href="https://www.shensi.com/#/eos">Shensi.com</a></p>
+<p><img class="alignnone size-medium wp-image-573" src="https://www.eosjapan.org/wp-content/uploads/2018/11/スクリーンショット-2018-11-13-13.04.59-300x111.png" alt="" width="300" height="111" srcset="https://www.eosjapan.org/wp-content/uploads/2018/11/スクリーンショット-2018-11-13-13.04.59-300x111.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/11/スクリーンショット-2018-11-13-13.04.59.png 741w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>&nbsp;</p>
+<p><strong>CryptoKylinはEOS教育を中国の視聴者にもたらします</strong><br />
+EOS Beijingが1ヶ月前に起動したCryptoKylinは、すべてのものEOSの広範な知識ベースである。初心者のためのチュートリアル、Wiki、開発者用ツール、コミュニティフォーラムが含まれています。<br />
+<a href="http://knowledge.cryptokylin.io/">CyrptoKylin (中国語)</a></p>
+<p><img class="alignnone size-medium wp-image-574" src="https://www.eosjapan.org/wp-content/uploads/2018/11/スクリーンショット-2018-11-13-13.07.06-300x154.png" alt="" width="300" height="154" srcset="https://www.eosjapan.org/wp-content/uploads/2018/11/スクリーンショット-2018-11-13-13.07.06-300x154.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/11/スクリーンショット-2018-11-13-13.07.06.png 714w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>&nbsp;</p>
+<p><strong>EOS Beijingからのアップデート</strong><br />
+• EOS BeijingはEOSに基づく学生のステータス管理についてはいくつかの高校と協力しています。<br />
+• 組織管理プラットフォームであるZionは、EOSブロックチェーンを企業にとって魅力的にするためのツールとして開発されています。</p>
+<p><strong>クロスチェーン機能を備えたエンタープライズソリューションを構築するEOSCochain</strong><br />
+Cochainのインターチェーンプロトコル（icp）契約とicpリレープラグインは来月の初めに完了する。icpコントラクトとリレープラグインを使用すると、EOSのメインチェーンがパラレルチェーンと通信できるようになり、スケーラビリティと分散化が強化されます。</p>
+<p><strong>EOS Cannonは杭州でミートアップを成功させました</strong><br />
+EOS Cannonは杭州でWhaleExとの交流会を開催し, 10件以上のdAppと100人以上の出席者が参加しました。</p>
+<p>&nbsp;</p>
+<h3>【EOS ガバナンス】</h3>
+<p>EOS憲法の洗練に向けた作業が続けられています</p>
+<p><a href="https://docs.google.com/document/d/1JPR-gRb2LOijCyU1sV5aNHJq2EifVLIH2pSwYpnp2Jw/edit">EOS Amsterdam v3 憲法ワーキングドラフト</a><br />
+<a href="https://drive.google.com/file/d/0B8hRWNIodRzJb2VnN253Mm9jeFVZZVBxVlBpT1E5VS1lNkQ0/view">韓国版v4憲法ワーキングドラフト</a><br />
+<a href="https://block.one/news/block-ones-proposal-for-eos-constitution-v2-0/">Block.Oneのv2 提案</a><br />
+<a href="https://github.com/EOS-Mainnet/governance/blob/master/eosio.system/eosio.system-clause-constitution-rc.md">現在のv1 EOS憲法</a></p>
+<p>素晴らしいダイジェストを提供してくれたEOS New York、そしてJEDA、LaoMao、EOS Beijing、EOS Cochainにも感謝します。</p>
+<p>実にスケーラブルで統治された世界初のブロックチェインになる道は順調に進んでいます。BP（ブロックプロデューサー）間の競争とコラボレーションの健全な組み合わせにて、分散アプリケーションの作成、インフラストラクチャの改善、ガバナンスの正式化のレースが始まるでしょう。</p>
+<p>私たちのブリッジレポートは、世界中のEOSコミュニティが最新の開発状況を世界中の人々に紹介する機会です。次期版に含める更新プログラムをお送りしたい場合は、Telegramでご連絡ください。</p>
+<p>言語バージョン<br />
+<a href="https://medium.com/@linkfoundation828/bridge-%E7%AC%AC%E4%B8%80%E6%9C%9F%E6%8A%A5%E5%91%8A-f236c7ab6039">中国語ブリッジレポート</a><br />
+<a href="https://golos.io/eos/@cryptolions/bridge-report-1">ロシア語ブリッジレポート（CyrptoLionsからのリリース）</a><br />
+<a href="https://www.soliset.com/bridge-report1">ペルシア語ブリッジレポート（Solisetからのリリース）</a><br />
+<a href="https://medium.com/@linkfoundation828/%EC%B2%AB-%EB%B2%88%EC%A7%B8-bridge-%EB%A6%AC%ED%8F%AC%ED%8A%B8%EC%97%90-%EC%98%A4%EC%8B%A0-%EA%B2%83%EC%9D%84-%ED%99%98%EC%98%81%ED%95%A9%EB%8B%88%EB%8B%A4-dbf18b4e1239">韓国語ブリッジレポート（EOS Nationからのリリース）</a><br />
+<a href="https://www.eosjapan.org/?p=561">日本語ブリッジレポート（JEDA からのリリース）</a></p>
+<p><a href="https://medium.com/@linkfoundation828/bridge-report-1-8ccc603b7b58">ソース10/24</a></p>
+<p>日本語翻訳はJEDAを担当します。転載時、ソースを明記してください。</p>
+]]></content:encoded>
+							<wfw:commentRss>https://www.eosjapan.org/?feed=rss2&#038;p=561</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>2億ドル台でEOSが投票システムを構築</title>
+		<link>https://www.eosjapan.org/?p=557</link>
+				<comments>https://www.eosjapan.org/?p=557#respond</comments>
+				<pubDate>Sat, 10 Nov 2018 05:59:54 +0000</pubDate>
+		<dc:creator><![CDATA[Mariko]]></dc:creator>
+				<category><![CDATA[EOS]]></category>
+
+		<guid isPermaLink="false">https://www.eosjapan.org/?p=557</guid>
+				<description><![CDATA[EOSブロックチェーンに3,500万ドル相当のトークンが存在 ...]]></description>
+								<content:encoded><![CDATA[<p><img class="alignnone size-medium wp-image-558" src="https://www.eosjapan.org/wp-content/uploads/2018/11/スクリーンショット-2018-11-10-14.35.44-300x166.png" alt="" width="300" height="166" srcset="https://www.eosjapan.org/wp-content/uploads/2018/11/スクリーンショット-2018-11-10-14.35.44-300x166.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/11/スクリーンショット-2018-11-10-14.35.44.png 764w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>EOSブロックチェーンに3,500万ドル相当のトークンが存在するウォレットがあります。これは誰にも触ることができない状態であり、またコンスタントに残高は上昇しています。</p>
+<p>最終的に最初の１２ヶ月のEOSのブロックチェーン、このウォレット（eosio.savingと呼ばれる）は最近のEOSの価格の4.79ドル計算で1億9,200万ドル相当あります。</p>
+<p>理論的には、この資産はEOSにとって有益なイニシアチブのために使われるためにセットされています。<br />
+すなわち新テクノロジー構築、セキュリティ監査の実施、ミートップ用のスポンサー資金、法務周りの費用のために用意されています。</p>
+<p>しかしここで一つの問題があります。それは現在資金を分配するシステムがないのです。</p>
+<p>EOSブロックチェーンネットワークは6月時点の完成前、ネットワークの「構成」に規定されている多くの機能と未構築のホワイトペーパーがありました。</p>
+<p>ホワイトペーパーによれば、EOSプロトコルの重要な側面は他のブロックチェーンの「予期せぬ結果をもたらす臨時、非公式、そしてしばしば起こる論争を避けるための定義されたガバナンスプロセス（統治プロセス）」でした。</p>
+<p>このガバナンスプロセスはトークン量をベースとしたトークンホルダーが投票するためのシステムをさします。。<br />
+しかしこの投票プロセスはまだ存在しておらず、そのためにガバナンスシステムは公開してからこのシステムの話は流れていました。</p>
+<p>投票メカニズムとして知られるトークンホルダーによる投票システムはeosis.savingの資金がどうなるのかという疑問が中心にありました。</p>
+<p>EOSの投票システムについてホワイトペーパー内で言及はありませんが、EOSのルールとしてeosio.savingの資金を使うためのシステム設定など、EOSネットワーク全体に影響しうる決定を行うためのプロセスを明示的に求められています。<br />
+また、ねじれた循環理論において、投票システムは暫定のEOSのルールを批准するために必要とされています。</p>
+<p>EOSをさらに発展させるために必要なことについて、Daniel Keyes（EOS NationのCOO、創業者、ブロックプロデューサー）がCoinDeskに語ってくれました。</p>
+<p>「EOSローンチ時点では投票システムはなかった。だから、私たちと一緒に集まりシステムを構築するのは我々の責任だ。」</p>
+<p>このアドバイスを受けKees氏は投票システムを構築するために一緒に働いているブロックプロデューサー候補とチームのプロジェクトマネージャーとして働いています。</p>
+<p>同時にEOS Core WPS Working Groupとして知られるグループがWPS（ワーカー提案システム）をEOSホワイトペーパーにある提案の提出とeosio.savingにある資産をトークンホルダーがいつでも承認できるためのメカニズムを開発しています。</p>
+<p>そして既に、このワーキンググループはWPSのバックエンドのプログラムを公開しました。<br />
+しかし言及したようにWPSコードは1EOSトークン、1票の投票で承認されなければならないのですが、ワーキンググループはトークンホルダーの投票システムの導入を待っています。</p>
+<p>&nbsp;</p>
+<p>【支払い】<br />
+EOSコミュニティが資金をどう使うか分裂している現在、WPSの重要性は増しています。</p>
+<p>ワーキンググループのメンバーを含む何人かはコミュニティの利益のために使われた資金を見たい、また著名な声はWPSを取り除き、eosio.savingアカウントで保持しているEOSトクーンを取り除くべきとの意見もあります。</p>
+<p>話を戻して、eosio.savingアカウントの資金は&#8221;増加&#8221;している状況、すなわちこの文脈はEOSトークンの予想可能な総供給量の増加です。</p>
+<p>毎年5％の増加をするEOSトークン、そしてその4/5はeosio.savingに自動的に貯蓄されます。このプロセスはEOSプロトコルにコード化された資金調達メカニズムによって可能になっています。</p>
+<p>これを受けワーキンググループは、最近のブログ記事においてEOS100万トークン（約480万ドル）をeosio.saving口座から譲渡し、EOS仲裁機関 トークン所有者、セキュリティテスト、WPSのオンラインポータルに投資することを提案した。</p>
+<p>また彼らは緊急事態が収束した際に委員会を解散することを約束しているが、プロジェクトの提案を評価するための「緊急委員会」を設置したいとのことです。<br />
+委員会によって承認された提案は、トークン所有者による投票に委ねられます（これらは国民投票と同様ですが、トークン所有者の参加には最低限の閾値はなし）。</p>
+<p>ワーキンググループメンバー且つ、EOSYS候補でブロックプデューサーのオーキド・キム(Orchid Kim)氏によると、投票制度を作り、EOSIOの資産を将来のプロジェクトに配分することは、「EOSが期待に応えるための唯一の方法です。」と話しました。</p>
+<p>「私達はBlock.one、ブロックプロデューサー、ボランティアの方々に頼り続けるべきではない。」とキム氏は続けてました。</p>
+<p>Block.oneはダン・ラリマー(Dan Larimer)氏が率いる会社で、EOSプロトコルの背後にあるプロトコルコード開発を行い、ICOでは40億ドルを調達したが、EOSネットワークの立ち上げには参加しませんでした。</p>
+<p>キム氏はこの様に締めました。<br />
+「分散型のプロセスとブートストラッピング（自己完結型のプロセス）は大変で、困難なタスクです。修正と開発すべきことはたくさんあります。」</p>
+<p>【焼却する】<br />
+コミュニティーメンバーのうちの幾人かはキム氏の意見に賛同しません。ですが、EOSがWPSとそれを資金提供するトークンのインフレを排除すべきだと主張している。<br />
+最も注目すべきことに、Block.oneのCEOブレンダン・ブルマー（Brendan Blumer）氏はこの見解を７月下旬に指示しました。</p>
+<p>当時、ブルマー氏はTwitterユーザーに対して「混合する可能性があったとしても」と返答しています。<br />
+トップのブロックプデューサー（ネットワーク上のトランザクションを検閲する人）が自分自身の間で分割する1%のインフレ〜が不十分な様に見えるかもしれません。</p>
+<p>このようにユーザーはWPS契約によって付与される4%のインフレーションの後を追うために、これらの多数のトークンを保持することを「クジラ」と呼ばれる大規模なブロックプロデューサーに期待していた。</p>
+<p>「私達は既に投票システムがどのように動作するか知っています。」他のユーザーがRedditにコメントしました。クジラが自身の利益削減と引き換えに優勢なブロックプロデューサーに投票したという認識を参照しています。</p>
+<p>国民投票制度とは異なり、この投票システムはブロックプロデューサーを選ぶための投票システムはすでに構築されています。<br />
+このシステムは１トークン＝１票のシステムなため、EOSコミュニティの内外関わらず、投票結果を決定するために多数のウォレットを参照しています。</p>
+<p>ユーザーはそれから付け加えました。「このWPSを完全に取り除くことが最高の判断です。」</p>
+<p>しかし金総書記は、EOSコアWPSワーキンググループのメンバーは「コミュニティの中には何かしらの恐怖を認識している」と述べ、システムを守るために多くの観測とバランスを取っている。</p>
+<p>例えば、ワーキンググループはeosio.savingアカウントにあるトークンの内、半分をバーン（トークンの消去）することを提案しています。</p>
+<p>しかしKees氏がCoinDeskに対し「投票システムの提案や投票の為に必要な最低限の実行環境のテストはすぐに始めることが出来たので、状況はまもなく進展するだろう。 実装の完全な公開はもうすぐです。」と伝えました。</p>
+<p>WPS周辺の議論と同様、EOSのルールについても議論が継続しているが、国民投票を通じて批准されていない為、現時点では「暫定的」な状態です（今EOSでは投票システムはない）。</p>
+<p>Keyes氏はこのようにEOSの長引く問題を解決する為に新しい投票制度を使うことの重要性を強調し、CoinDeskにこう語りました。</p>
+<p>「私達は何百万ドルもの資金を集めていながら何もすることが出来ません。<br />
+私達はEOSユーザーが暫定EOSルールの変更を望んでいることを知っているので、できるだけ早く何かしらの形で市場に届けたいと思っています。」</p>
+<p><a href="https://www.coindesk.com/with-nearly-200-million-on-the-line-eos-is-building-a-voting-system/">ソース27Aug&#8217;18</a></p>
+]]></content:encoded>
+							<wfw:commentRss>https://www.eosjapan.org/?feed=rss2&#038;p=557</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>EOS（EOS）のアカウント作成コスト25％減少</title>
+		<link>https://www.eosjapan.org/?p=539</link>
+				<comments>https://www.eosjapan.org/?p=539#respond</comments>
+				<pubDate>Mon, 22 Oct 2018 03:11:30 +0000</pubDate>
+		<dc:creator><![CDATA[Mariko]]></dc:creator>
+				<category><![CDATA[EOS]]></category>
+
+		<guid isPermaLink="false">https://www.eosjapan.org/?p=539</guid>
+				<description><![CDATA[EOSネットワークは、安価なアカウント作成と各ユーザーへのよ ...]]></description>
+								<content:encoded><![CDATA[<p><img class="alignnone size-medium wp-image-540" src="https://www.eosjapan.org/wp-content/uploads/2018/10/スクリーンショット-2018-10-22-12.07.52-300x196.png" alt="" width="300" height="196" srcset="https://www.eosjapan.org/wp-content/uploads/2018/10/スクリーンショット-2018-10-22-12.07.52-300x196.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/10/スクリーンショット-2018-10-22-12.07.52.png 660w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>EOSネットワークは、安価なアカウント作成と各ユーザーへのより大きなRAM割り当てによって、よりアクセスしやすくなった。</p>
+<p>「EOS（EOS）ネットワーク上で新規アカウントを作成するコストが、各ユーザーへのRAM追加割り当てを受けたことで25％減少した」とブロックプロデューサーの1人である<br />
+“EOS New York”が記事で発表した。</p>
+<p>エンドユーザーにおけるこの成果は“EOS New York”とその他14人のブロックプロデューサーがコードのアップデートを承認したのち、各ユーザーにさらに多くのRAMを割り当てることになる。これはRAMへの支出を減らすこととは別に、取引所でのリソースの購入をより容易にする。</p>
+<p>EOSエコシステムは新しい分散型アプリ（dApp）ユーザに向け、搭載コストの面で課題に直面している。ネットワーク関係者は、これによってdAppプロデューサのコストを押し上げたり、コストをクライアントに上乗せする必要があるという可能性があることに気づいている。</p>
+<p>“EOSアカウントの作成コストは、プラットフォームの健全性において非常に重要な側面だ。EOS分散型アプリケーション（dApp）のユーザーの多くは、EOSブロックチェーンの理解に対して熱心に時間を費やしているアーリーアダプターである。しかし今後、ユーザーが熱心になることはないだろう”とEOS New Yorkは説明した。</p>
+<p>EOS RAMの価格は、キロバイトあたり約0.11 EOSに減少した。ピーク時、EOSの価格が8ドルに近づくと、RAMへの投機によって価格はキロバイトあたり0.87 EOS以上に上昇した。それ以来、EOSの市場価格が下がったために価格が下がった。</p>
+<p>しかし、EOS開発者にとって最大のハードルの1つは、マーケットの変動を背景にして新規ユーザーのコストを払ってアプリを構築することである。</p>
+<p>9/5には、EOSの価格は$6.57で同日のピークに達した。この資産は、9/7、UTC 06:30時点で$5.30で取引され、過去24時間の内に約5.3％上昇した。また、EOSの取引量は依然として活発で、9/6の取引量は8億8400万ドルに相当する。</p>
+<p><img class="alignnone size-medium wp-image-541" src="https://www.eosjapan.org/wp-content/uploads/2018/10/スクリーンショット-2018-10-22-12.08.33-277x300.png" alt="" width="277" height="300" srcset="https://www.eosjapan.org/wp-content/uploads/2018/10/スクリーンショット-2018-10-22-12.08.33-277x300.png 277w, https://www.eosjapan.org/wp-content/uploads/2018/10/スクリーンショット-2018-10-22-12.08.33.png 502w" sizes="(max-width: 277px) 100vw, 277px" /></p>
+<p>47以上の出来高が、Crypto Compareのデータに基づき、Tether（USDT）トークンに対抗していることになる。中でも、BinanceとOKExは、EOS/USDTの通貨ペアで最も活発な市場である。</p>
+<p><a href="https://cryptovest.com/news/eos-eos-account-creation-cost-declines-by-25/">ソース記事 7Sep&#8217;18</a></p>
+]]></content:encoded>
+							<wfw:commentRss>https://www.eosjapan.org/?feed=rss2&#038;p=539</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>EOSテクノロジーが欧州初の完全暗号化バンキングソリューションを提供</title>
+		<link>https://www.eosjapan.org/?p=536</link>
+				<comments>https://www.eosjapan.org/?p=536#respond</comments>
+				<pubDate>Mon, 22 Oct 2018 03:03:17 +0000</pubDate>
+		<dc:creator><![CDATA[Mariko]]></dc:creator>
+				<category><![CDATA[EOS]]></category>
+
+		<guid isPermaLink="false">https://www.eosjapan.org/?p=536</guid>
+				<description><![CDATA[CoinbaseのCEO、Brian Armstrong氏は ...]]></description>
+								<content:encoded><![CDATA[<p><img class="alignnone size-medium wp-image-537" src="https://www.eosjapan.org/wp-content/uploads/2018/10/スクリーンショット-2018-10-22-12.02.01-300x169.png" alt="" width="300" height="169" srcset="https://www.eosjapan.org/wp-content/uploads/2018/10/スクリーンショット-2018-10-22-12.02.01-300x169.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/10/スクリーンショット-2018-10-22-12.02.01.png 756w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>CoinbaseのCEO、Brian Armstrong氏は5月に完全な資金調達を進めようとしているプラ​​ットフォームについて、「ISP（集中型）やブラウザ（分散型）のように、公開された金融システムを構築するための集中型及び分散型の製品は、どちらもインターネット エコシステムにおいて重要な役割を果たしている」と述べた。</p>
+<p>そのような一団がシェアしている未来の成長計画が、伝統的な金融サービスの枠組みの中で仮装通貨を統合すべく現在ICOを開催中のベンチャー企業、Platioだ。</p>
+<p>そのアイデアは、ユーザー（個人と法人の両方）が寄せ集めたものの管理、仲介、単一のプラットフォームでの支払いと取引所のソリューション、または“たった1度のログインで可能になる、一体化型銀行アプリから仮想通貨や法定通貨、株式…などへアクセス”を提供することをプロジェクトのホワイトペーパーの概要としている。</p>
+<p>&nbsp;</p>
+<p>EOSからの派生</p>
+<p>法定通貨と暗号通貨の適切なバランスを明らかにすることは、大量採用を成し遂げる上で一定数のアナリストを確保することと同じくらい重要な側面である。</p>
+<p>PlatioのCEO、Dima Okhrimchuk氏は自身の信念として、最終的に「すべての金融資産はトークン化され、ブロックチェーン上で実行される」と表明し、「国際金融システムを完全に一変させる革命」に達すると述べた。</p>
+<p>しかしながら、法定通貨のための包括的な提供サービスを供給するプラットフォームを計画している最中とはいえ、株式や仮想通貨をプラットフォーム上で平等なパートナーとすることで、より多くの人が仮想通貨に慣れることが可能になる。</p>
+<p>最終的なプラットフォームでは、EOSのブロックチェーン上で主催され、EOSテクノロジー上で構築される初の完全なBaaS（銀行機能）ソリューションにする。</p>
+<p>潜在的な投資家を最大限アクセス可能にするために、Platioはイーサリアムブロックチェーン上のERC-20に対応したトークンである仮想通貨、PGASをリリースする。EOSインフラストラクチャが設置されれば、プロジェクトチームは独自のサイドチェーンでエアースワップを実行する。</p>
+<p>最終的に提供されるものには、法定通貨での支払いを承認するためにすでに調達しているEUライセンスを活用し、流動性がいくつかの決済、および仮想通貨によって裏付けされる支払カードも組み込まれる予定だ。このプロジェクトは、ビジネスモデルをグローバル化するという総合的な使命の元、今後のICOに向けて3400万ユーロのハードキャップを設定した。</p>
+<p><a href="https://www.icoexaminer.com/ico-news/eos-technology-to-power-europes-first-complete-crypto-banking-solution/">ソース3Sep&#8217;18</a></p>
+]]></content:encoded>
+							<wfw:commentRss>https://www.eosjapan.org/?feed=rss2&#038;p=536</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>EOSのdAppsはイーサリアムのdAppsのトランザクション量を超えた</title>
+		<link>https://www.eosjapan.org/?p=525</link>
+				<comments>https://www.eosjapan.org/?p=525#respond</comments>
+				<pubDate>Mon, 22 Oct 2018 02:50:29 +0000</pubDate>
+		<dc:creator><![CDATA[Mariko]]></dc:creator>
+				<category><![CDATA[EOS]]></category>
+
+		<guid isPermaLink="false">https://www.eosjapan.org/?p=525</guid>
+				<description><![CDATA[dAppsの統計情報を提供するDappRadarによると、E ...]]></description>
+								<content:encoded><![CDATA[<p>dAppsの統計情報を提供するDappRadarによると、EOSプラットフォーム上のdAppsは、すでにトランザクション量に関してEthereumベースのdAppsを上回っています。<br />
+ここに詳細があります。</p>
+<p>DappRaderの統計によると、EOSブロックチェーン上で動作する多くのアプリケーションは、現在、Ethereumベースのものよりも多くの収益を上げています。</p>
+<p><img class="alignnone size-medium wp-image-526" src="https://www.eosjapan.org/wp-content/uploads/2018/10/スクリーンショット-2018-10-22-11.41.26-251x300.png" alt="" width="251" height="300" srcset="https://www.eosjapan.org/wp-content/uploads/2018/10/スクリーンショット-2018-10-22-11.41.26-251x300.png 251w, https://www.eosjapan.org/wp-content/uploads/2018/10/スクリーンショット-2018-10-22-11.41.26.png 509w" sizes="(max-width: 251px) 100vw, 251px" /></p>
+<p><a href="https://twitter.com/DappRadar/status/1034896858760413184?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1034896858760413184&amp;ref_url=https%3A%2F%2Fcryptonewsreview.com%2Feos-dapps-already-seeing-higher-transaction-volumes-than-ethereums%2F">ソース</a></p>
+<p>当然ながら、おそらくその大きなボリュームはギャンブルプラットフォームで行われていると考えられます。実装が比較的簡単なのが理由に上がります。<br />
+ここでEOS上のトップ10のdAppがあります。EOSBetはユーザー数では2位ですが、そのネットワークを経由して稼動している金額はさらに上昇していると考えられます。</p>
+<p><img class="alignnone size-medium wp-image-527" src="https://www.eosjapan.org/wp-content/uploads/2018/10/EOSdApps1-768x435-300x170.png" alt="" width="300" height="170" srcset="https://www.eosjapan.org/wp-content/uploads/2018/10/EOSdApps1-768x435-300x170.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/10/EOSdApps1-768x435.png 768w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>EOSのTOP10dApps<br />
+<a href="https://cryptonewsreview.com/wp-content/uploads/2018/08/EOSdApps-768x435.png">Top 10 EOS dApps, Dapp raderより</a></p>
+<p>&nbsp;</p>
+<p>対照的に、こちらはEthereumのTOP10のdAppsがあります。</p>
+<p><img class="alignnone size-medium wp-image-528" src="https://www.eosjapan.org/wp-content/uploads/2018/10/EthdApp1-768x435-300x170.png" alt="" width="300" height="170" srcset="https://www.eosjapan.org/wp-content/uploads/2018/10/EthdApp1-768x435-300x170.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/10/EthdApp1-768x435.png 768w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>Ethereum dApps Top 10, courtesy of DappRadar<br />
+<a href="https://cryptonewsreview.com/wp-content/uploads/2018/08/EthdApp-768x435.png">EthereumのdAppsのTOP10、Dapp raderより</a></p>
+<p>&nbsp;</p>
+<p>Ethereumは、300ドルを下回っている価格の面だけでなく、他のアプリの基礎として期待に応えていないという一般的な認識の点でも、開発が遅れて苦労しています。<br />
+EOSの創造者であるダニエル・ラリマー（Daniel Larimer）をはじめ、業界の他の人たちからの興味深い取り組みが生まれました。</p>
+<p>上記の数字を見ると、ETHにとっては悲しいことだけではありません。<br />
+これはとても簡単に理解することができます。EOSBetいおいて興味深いのはEOSが収益を歪めている点です。これはユーザーベースのEthereumからすると明らかな利点となります。<br />
+ユーザーにとって、EOSのブロックチェーン上で動作する最初のゲームであるRPGであり、Ethereumリストで３位にランクインしているEOSKnightsというdAppsがあります。<br />
+実際に、EOSの5位の提携であるDEXEOS取引所は、競合他社のdAppのトップ10に入ることさえできませんでした。</p>
+<p>それらのユーザーの人数は、後半の多くの会話データがソースとなっています。<br />
+dAppsにおいてICO投資家が期待していた環境になるには多くの時間と道のりが必要ということが明らかになりました。<br />
+これらの主な例示は、8月7日に約60人のデイリーユーザーしかいない「予測市場アプリAuger」で、評価額は308億ドルです。<br />
+このような評価額の膨大している裏では、単純な数学的な公式がそれぞれ500万ドルの価値があると評価されているからです。</p>
+<p>Augerは注目すべきdAppsでしたが、CryptoGlobeが行ったその他の顧客別評価のいくつかは、ファンダメンタル情報を追いかけるユーザーたちに同様に注目されていました。</p>
+<p><img class="alignnone size-medium wp-image-529" src="https://www.eosjapan.org/wp-content/uploads/2018/10/スクリーンショット-2018-10-22-11.43.04-300x147.png" alt="" width="300" height="147" srcset="https://www.eosjapan.org/wp-content/uploads/2018/10/スクリーンショット-2018-10-22-11.43.04-300x147.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/10/スクリーンショット-2018-10-22-11.43.04.png 653w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p><a href="https://cryptonewsreview.com/wp-content/uploads/2018/08/dapp_chart.png__800x400_q85_crop_subsampling-2_upscale-768x384.png">ソース</a></p>
+<p>昨年のブロックチェーンイノベーションの大きな推進要因の1つである分散型アプリケーション（dApp）は、人気のあるICOの中心的なサービスとなっています。<br />
+Ontology（ONT）、EOS（EOS）、そしてEthereum（ETH）がdAppsを構築するプラットフォームを提供しており、プラットフォームである彼ら自身の大規模な提供を生み出してきました。<br />
+EOS自体がその代表例であるとすれば、40億ドルを超える額でICOを完了したことでしょう。<br />
+テレグラムも20億円という多額のICOを行なったプロジェクトで有名です。またテレグラムはとても高い情報の秘匿性があり、テレグラム・オープン・ネットワーク（TON）プラットフォームの創設を前提としてます。</p>
+<p>これまでに報告したように、EOSは現在、EOSブロックチェーン用に作成されたdAppsが約200あります。<br />
+The Dappsの状態によると、Ethereumは現在890のアクティブなdAppsを持っていますが、その内、297は「動作中」、176が「プロトタイプ」、153が「ベータ版」、57が「コンセプト確立中」としてリストされています。<br />
+25万人を超えるプロジェクトに携わっているConsenSys（Ethereumの共同設立者Joseph Lubin）によれば、開発者の面でも巨大なリードを持っています。</p>
+<p>&nbsp;</p>
+<p>dAppsは、ブロックチェーンとトークン化を使用し、そのソフトウェアの基本として、不変性やトランザクションコンセンサス（決済などのやり取り）などの利点を利用します。<br />
+したがって、ゲーム、クラウドのストレージとコンピューティング、メッセージングアプリ、ソーシャルネットワーク、仮想通貨取引所など、他の誰もそれをまだブロックチェーンの上に構築することは考えていませんでした。<br />
+このアイデアは、既に大規模なサーバー（MMO、ソーシャルネットワークなど）に集中化されているものは、最終的に分散化されてトークン化されるということです。</p>
+<p>エヴァンジェリストにとって、dAppsはブロックチェーン技術の勇敢な新しい世界を表しています。Bitcoinの技術革新が単なる金銭以上のものになりうる方法です。<br />
+私たちがGoogle、Facebook、Uberなどの大企業に自由に手渡している個人情報や、コンテンツをdAppsでは収益を上げる方法を提供できます。</p>
+<p>しかし、それほどイデオロギー的に主導されていない他のユーザーからすると、まだ利用可能な製品やサービスの劣ったバージョンであり、まだ問題を探しているソリューションです。<br />
+それほどこのdAppsが作る世界観に賛同するか迷っているユーザーたちは、しかしながら、まだ利用可能な製品やサービスがない状況であり、まだ問題を探している状況と言えます。</p>
+<p>ブロックチェーン技術がUberを必要としているという考えは、ブロックチェーン技術を未来と考えている人たちのために必要なのです。<br />
+問題は、明らかに世界には既にUberがあるということです。誰も思想的根拠に基づいてブロックチェーンに切り替えることは誰も確信がありません。</p>
+<p><a href="https://cryptonewsreview.com/eos-dapps-already-seeing-higher-transaction-volumes-than-ethereums/">ソース 30Aug&#8217;18</a></p>
+]]></content:encoded>
+							<wfw:commentRss>https://www.eosjapan.org/?feed=rss2&#038;p=525</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Block.OneによるEOSブロックチェーンのアップデートと暗号資産への将来の影響に関する公式発表</title>
+		<link>https://www.eosjapan.org/?p=520</link>
+				<comments>https://www.eosjapan.org/?p=520#respond</comments>
+				<pubDate>Mon, 22 Oct 2018 02:24:47 +0000</pubDate>
+		<dc:creator><![CDATA[Mariko]]></dc:creator>
+				<category><![CDATA[EOS]]></category>
+
+		<guid isPermaLink="false">https://www.eosjapan.org/?p=520</guid>
+				<description><![CDATA[Block.Oneによる、EOSの未来とブロックチェーン技術 ...]]></description>
+								<content:encoded><![CDATA[<p><img class="alignnone size-medium wp-image-521" src="https://www.eosjapan.org/wp-content/uploads/2018/10/Block-One-Official-Talks-About-EOSs-Future-and-The-Impacts-Of-The-Blockchain-Technology-696x449-300x194.jpg" alt="" width="300" height="194" srcset="https://www.eosjapan.org/wp-content/uploads/2018/10/Block-One-Official-Talks-About-EOSs-Future-and-The-Impacts-Of-The-Blockchain-Technology-696x449-300x194.jpg 300w, https://www.eosjapan.org/wp-content/uploads/2018/10/Block-One-Official-Talks-About-EOSs-Future-and-The-Impacts-Of-The-Blockchain-Technology-696x449.jpg 696w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>Block.Oneによる、EOSの未来とブロックチェーン技術による影響に関する公式発表</p>
+<p>先日Relations at Block.oneの代表Serg Metelin氏が、EOSブロックチェーンおよびブロックチェーン技術全体の将来に関した発表をおこなった。Block.oneは、EOSブロックチェーン（ソフトウェアを含み、インフラの上にチェーンが構成されたブロックチェーン）を創り上げたグループとして一般的に知られている。</p>
+<p>Metelin氏によると、ブロックチェーンは現状ではまだ社会にとって謎であり、潜在的な可能性をたっぷり保有していると述べた。また彼は、現代のインターネットのベースになっているWWW（ワールドワイドウェブ）との違いとして、WWW（ワールドワイドウェブ）が常に情報転送をメインの目的としているのに対して、ブロックチェーン技術はセキュリティを最優先課題としていると述べている。</p>
+<p>インタビューの際、Metelin氏はブロックチェーンを使って、一般的にあまり透明性のない情報の透明度を向上させる方法についても述べた。加えて、彼はブロックチェーン技術が損失を軽減し、大幅に分散化できるシステムの構築に効果的であると述べた。</p>
+<p>&nbsp;</p>
+<p>近代のブロックチェーン技術はより効果的であるとBlock.Oneは公式に断言</p>
+<p>Metelin氏は批評家に対してもブロックチェーン技術を擁護した。彼は、多くの人が肯定しているほど、テクノロジーは遅くないと述べた。実際、彼によると新しいブロックチェーン技術のほとんどはとても早いと言う。</p>
+<p>また、Block.Oneの関係者によると、最新のバージョンではイーサリアムのブロックチェーンに比べて、滑らかに移行が可能で、古いイーサリアムブロックチェーンが1秒あたり15回のトランジションしか作成できないのに対し、EOSIOブロックチェーンは3700TPS（1秒あたりのトランジション数）作成が可能であると述べた。</p>
+<p>彼は、コミュニティがブロックチェーン技術の多くの側面に同調しており、新しいユーザーにとって、より高速で、より優れたユーザー経験と、より良いアクセスを提供でき、総体的により良い経験を作成すると断言した。</p>
+<p>また、Metelin氏は、ブロックチェーンとスマートコントラクトは現時点で既存のビジネスモデルやコミュニケーションモデルの多くに使用されており、その透明性と用途を高める上で、重要情報を確保する手段とも言えると述べている。</p>
+<p>彼は最終的に、ブロックチェーンが金融市場で利用され始めると、徐々に大衆に近づき、技術のより大きな導入に繋がるとコメントした。彼によると、ブロックチェーンのポテンシャルが解放され、分散化システムによる現実世界への影響が明らかになれば、我々に利益をもたらすだろうと述べた。</p>
+<p>EOSは最近、中華人民共和国工業情報化部が定めた仮想通貨ランキングでイーサリアムを上回り、1位にランクインした。</p>
+<p><a href="https://bitcoinexchangeguide.com/block-one-official-talks-eos-blockchain-updates-and-crypto-assets-future-impacts/">ソース 20Aug&#8217;18</a></p>
+]]></content:encoded>
+							<wfw:commentRss>https://www.eosjapan.org/?feed=rss2&#038;p=520</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>EOSリソースにおけるレンタルとレンタル手数料の配分</title>
+		<link>https://www.eosjapan.org/?p=499</link>
+				<comments>https://www.eosjapan.org/?p=499#respond</comments>
+				<pubDate>Wed, 26 Sep 2018 07:55:13 +0000</pubDate>
+		<dc:creator><![CDATA[Mariko]]></dc:creator>
+				<category><![CDATA[EOS]]></category>
+
+		<guid isPermaLink="false">https://www.eosjapan.org/?p=499</guid>
+				<description><![CDATA[EOSIOベースのブロックチェーンにおけるネットワーク使用料 ...]]></description>
+								<content:encoded><![CDATA[<p>EOSIOベースのブロックチェーンにおけるネットワーク使用料と、CPUリソースの削減に対する解決策をご紹介します。</p>
+<p>EOSネットワークでは、最大400ms/秒のCPUリソースを賄っており、平均でも40ms/秒は維持されています。<br />
+このCPU稼働時間は全てのEOSトークンホルダーが3日に渡って投資している総量で均等に分割されます。<br />
+未使用CPUリソースは部分的な予約として割り当てられます。つまり、使用されていない時間は、EOSホルダーに与えられて使用するかどうか決められます。</p>
+<p>EOSIOのホワイトペーパーでは他を代表して処理する能力を必要としていると書かれています。<br />
+他を代表して処理する能力というのは、ほかの使われていない処理能力を借りることを示唆しています。<br />
+これから言えることは、トークンホルダーは使われていない処理能力を借りないという機会コストを持っていることになります。</p>
+<p>効率的なレンタル市場を創出するには、価格発見と流動性が必要です。<br />
+また、効率的なレンタル市場はリソースが常に利用可能であり、参加者にとってより合理的な価格であることを保証する必要があります。<br />
+トークン所有者は、トークン貸出期間中に保持トクーンの流動性を損失することと引き換えに、手数料を得ることが可能になります。<br />
+もちろん貸し手が損失を被るリスクはありません。</p>
+<p>【貸し出しトークン】</p>
+<p>EOS保有者は、EOSリソース交換所にトークンを貸与し、現在の簿価でEOSのREXトークンを受け取ることができます。<br />
+REXは、簿価を引き上げるEOSを貸し出すことによって手数料を発生させ、REXトークンの所有者はいつでもREXを簿価でEOSに戻すことができます。<br />
+REXはEOSを貸し出す際に、帳簿価格を引き上げるために手数料を発生させます。REXトークンホルダーはいつでもREXを簿価で、EOSに交換することができます。</p>
+<p>そしてさらに、CPUとNETリソースをレンタル手数料の収益においては、私たちは下記のように提案します。<br />
+さらに、CPUとNETリソースをレンタルする際の手数料を得るために、RAMトレード、名前オークションからの手数料を提案し、EOSIOチェーンが提供する他のリソースもREXの本に追加されます。<br />
+これにより、ネットワーク運用からの報酬がREX保有者（賭けられたEOS保有者）に払い出され、EOSを少なくとも30日間（賃貸期間）保持する効果的な報酬が発生します。</p>
+<p>【EOSトークンを借りる】</p>
+<p>REXのブッキングに貢献したすべてのEOSに対して、多数の投資用EOSトークン（SEOS）が作成されます。<br />
+SEOSとEOSはBancorの中継に２つのコネクターに配置されます。<br />
+SEOSはEOSに対して１：１の割合で作成されます。<br />
+この時点から、トレーダーはEOSとSEOSを売買することが少ない手数料で可能（0.5％）。</p>
+<p>SEOSがBancorリレーに売却がなされなかった場合、SEOSはステーキングしているEOSとして変換することが30日間可能になります。<br />
+30日の終わりに、SEOSはBancor リレーのコネクタに戻され（3日遅れて）、他の賃貸人に転売されます。<br />
+SEOSを委任期間に変換した後、EOSは賃貸人に返却されません。</p>
+<p>SEOSの保有者を拘束したり、売却したりしないようにするために、SEOSは現在のEOS / SEOS価格で定義された30日間の賃貸料に等しい金利で運用できます。<br />
+SEOSが増えるにつれて、1つのEOSを委任するために必要なSEOSの数が増え、新しく発行されたSEOSはBancorリレーのコネクタに加えられ、市場にて売却されます。</p>
+<p>SEOSをインフレさせる行為は、EOSをREXに貸し出しているREX保有者に支払われた実効金利として機能します。</p>
+<p>REXに貸与されたEOSは、議決権行使のための出資としてカウントされます。</p>
+<p>【リソース価格への影響】</p>
+<p>既存のEOSリソース配分モデルにおいて、ネットワークを1ヶ月間使用するコストは、30日後の販売収益を引いたコストに等しいということになります。<br />
+この間、残念なことにEOSのユーザーは価格の変動に晒されています。<br />
+EOSの価格に連動して資産の損失のリスクや、含み益を得るチャンスの双方が存在します。</p>
+<p>トランザクションがひどく渋滞している状況（10％を超える持続的な負荷）の下では、EOSのステーキングアルゴリズムは1EOSの保持あたり1日あたり約100マイクロ秒のCPU時間を保証します。<br />
+1分間に1回取引を行いたいトレーダーは、約15,000 EOS（2018年8月時点で約10万ドル）の株式を必要とします。<br />
+多くのトレーダーはそれほど多くの資本を欠いており、トレードするだけで変動リスクにさらすことを望む人はほとんどいないのが実情です。</p>
+<p>CPUとNETのリソースを借りることは、EOSの価格変動にさらされたり、高価な資本コストを抱えたりしないため、トレーダーにとってははるかに理にかなっています。<br />
+仮にEOS保有者がEOSを5％APRで借りていると仮定すると、1ヶ月間、1分間に1取引あたりすると仮定すると約0.01ドルになります。合計で60EOSが必要になります。<br />
+EOSの価格が横ばいであっても、これは15,000 EOSを売買することに関連する取引手数料よりも少ないです。</p>
+<p>リソースのレンタル料金が今後どのような推移を描くかを知ることは不可能ですが、より高い賃貸料がEOSを購入して保持するための需要を促進すると仮定することは安全です。<br />
+この市場は、EOSの価格とネットワーク使用のコストを効果的に切り離すでしょう。</p>
+<p>【SEOSとEOSの取引】</p>
+<p>SEOS/EOS市場は投資家が委任されたCPUまたはNET帯域幅の30日間の金利を設定することを可能にします。<br />
+投資家は、正確に将来の価格変動を予測し、適切なレンタル料金のネットワークを知らせる助けることで収益を得ることができ、ネットワークおよびREX保有者は、賃貸料に加えて、この取引量から利益を得ることが可能となります。</p>
+<p>【投票要件】</p>
+<p>REXを購入するには、投票代行を設定して維持するか、少なくとも21人のブロック制作者を承認する必要があります。<br />
+REXトークンを保持している間に投票を変更することはできません。<br />
+アカウントがすべてのREXトークンを販売した後、21人未満のブロック製作者に投票することができます。</p>
+<p>【システム契約の更新】</p>
+<p>この提案を実施するには、EOSIOシステム契約が議決権と交差し、他のネットワーク活動からの料金の分配と交差する範囲で、EOSIOシステム契約を更新する必要があります。<br />
+システム契約の外で同様の市場を実施することは可能であるが、そのような市場は投票目的のための機会費用になることと想定されます。</p>
+<p>【自動更新】</p>
+<p>30日間の委任契約の終了時に、ユーザーは30日間の別のレンタルを購入するのに十分なEOSを持っていると仮定して、さらに30日間自動的に購入して10％の割引を受けることができます。<br />
+10％の割引は、貸出トークンを別のユーザーに委任する前に3日間の遅延が経過するのを待つ必要がないことに起因します。<br />
+3日の遅延は、使用量を測定する際に使用される平均化アルゴリズムによるリソース使用の二重支出を防ぎます。</p>
+<p>【手数料モデルとの比較】</p>
+<p>他のブロックチェーンは、トランザクションごとの料金に基づいてトランザクションを販売します。<br />
+例えば、携帯電話での通話を使用することで、1分あたりの料金を支払うこともできますし、最低限のサービスを受けるために1か月に50ドルを支払うこともできます。</p>
+<p>調査によると、毎月の料金モデルは、マイクロペイメントモデルよりも価値が高く、ユーザーにとって理解しやすいということが分かります。<br />
+ニュースペーパーの記事ごとに0.01ドルを支払うか、毎月の定期購読料を支払うと、ユーザーにとってより美味しいものになりますか？ 1曲につき2ドルを支払うか、1か月に10ドルを払ってストリーミングしますか？</p>
+<p>イーサリアムの瞬間的な手数料は、高いボラティリティと予想不可能な動きをします。<br />
+定義された帯域幅の毎月のレンタルは、低いボラティリティと、予想のしやすい価格変動をユーザーに提供できます。</p>
+<p>手数料ベースのモデルはまた、会計上のコストを増加させ、価格を押し上げることにより短期間でユーザーはすぐにサービスを解約することが可能です。<br />
+イーサリアムのガス価格を24時間引き上げるよりもはるかに高価で、30日間のレンタル価格を上げることができます。</p>
+<p>【結論】</p>
+<p>この提案では、EOSネットワークの使用コストを削減し、CPUとNETの使用コストをEOSの資本流通/損失から切り離すと考えています。<br />
+それは、EOS価格の変動性に晒されたくない人々がEOSを利用できるようにし、EOSネットワークのに参加するインセンティブを生み出すことができます。</p>
+<p>リソースレンタルモデルを採用しないと、EOSの価格を推測している人にEOSの使用を制限する可能性が高いと考えられます。</p>
+<p>ソース <a href="https://medium.com/@bytemaster/proposal-for-eos-resource-renting-rent-distribution-9afe8fb3883a">https://medium.com/@bytemaster/proposal-for-eos-resource-renting-rent-distribution-9afe8fb3883a</a></p>
+]]></content:encoded>
+							<wfw:commentRss>https://www.eosjapan.org/?feed=rss2&#038;p=499</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>EOSグローバルハッカソン第4回目の開催場所を発表</title>
+		<link>https://www.eosjapan.org/?p=458</link>
+				<comments>https://www.eosjapan.org/?p=458#respond</comments>
+				<pubDate>Wed, 22 Aug 2018 08:53:18 +0000</pubDate>
+		<dc:creator><![CDATA[Mariko]]></dc:creator>
+				<category><![CDATA[EOS]]></category>
+
+		<guid isPermaLink="false">https://www.eosjapan.org/?p=458</guid>
+				<description><![CDATA[Block.oneは、世界初のブロックチェーンハッカソン第4 ...]]></description>
+								<content:encoded><![CDATA[<p><img class="alignnone size-medium wp-image-459" src="https://www.eosjapan.org/wp-content/uploads/2018/08/スクリーンショット-2018-08-22-17.25.55-300x109.png" alt="" width="300" height="109" srcset="https://www.eosjapan.org/wp-content/uploads/2018/08/スクリーンショット-2018-08-22-17.25.55-300x109.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/08/スクリーンショット-2018-08-22-17.25.55-768x278.png 768w, https://www.eosjapan.org/wp-content/uploads/2018/08/スクリーンショット-2018-08-22-17.25.55.png 823w" sizes="(max-width: 300px) 100vw, 300px" /><br />
+Block.oneは、世界初のブロックチェーンハッカソン第4回目としてとても期待される場所を発表しました。</p>
+<p><a href="https://twitter.com/EOS_io/status/1029005483716141058">https://twitter.com/EOS_io/status/1029005483716141058</a><br />
+<img class="alignnone size-medium wp-image-460" src="https://www.eosjapan.org/wp-content/uploads/2018/08/スクリーンショット-2018-08-22-17.22.48-288x300.png" alt="" width="288" height="300" srcset="https://www.eosjapan.org/wp-content/uploads/2018/08/スクリーンショット-2018-08-22-17.22.48-288x300.png 288w, https://www.eosjapan.org/wp-content/uploads/2018/08/スクリーンショット-2018-08-22-17.22.48.png 498w" sizes="(max-width: 288px) 100vw, 288px" /></p>
+<p><strong>EOS ハッカソン</strong><br />
+EOSハッカソンは、世界中のさまざまな場所で開催されるの2日間のハッカソンで構成されています。 各イベントでは144,000USDの賞金が授与され、トップ3のフィニッシャーは2018年12月にグランドフィナーレに進みます。EOSグランドフィナーレの場所は12月8日に発表されます。</p>
+<p><strong>サンフランシスコ</strong><br />
+4回目の場所は既にサンフランシスコと発表されていますが、イベント会場はまだ不明です。 イベントの詳細は、11月7日のZoomを介してオンライン情報セッション中にリリースされる予定です。</p>
+<p>EOS ハッカソンサンフランシスコの登録ページによると：<br />
+<a href="https://eoshackathon.io/events/san-francisco/">https://eoshackathon.io/events/san-francisco/</a></p>
+<p><em>「EOS グローバルハッカソンシリーズは、分散型グローバルコミュニティの成長を支えるブロックチェーンの世界で初めてのイベントです。 EOSIOで分散アプリケーションの未来を構築する為にぜひサンフランシスコで行われる次回のハッカソンの参加をお待ちしております。」</em></p>
+<p>hackathonに参加するチケットは10ドルです。チームのオプションもありますが各メンバーは個別に支払う必要があります。</p>
+<p><strong>過去のハッカソン</strong><br />
+最初のハッカソンは6月9-10日に香港で開催されました。 このイベントには17カ国から350人以上の応募者と90チームが参加しました。 審査員にはBlock.one CFOの Andrew Bliss氏、 EOS共同設立者のWinnie Liu氏、同じくEOS共同設立者であるマイケル・カオ氏（Michael Cao）</p>
+<p>2回目のハッカソンはオーストラリアのシドニーで8月4日から5日まで開催され、世界中から200人以上参加しました。 Andrew Bliss氏はBlock.oneのグループ社長であるRob Jesudason氏と並んで、このイベントの審査員でもありました。</p>
+<p>最後に、3回目のハッカソンは9月22日から23日にロンドンで開催されます。 審査員にはBlock.oneのCEO Brendan Blumer氏とBlock.one CTOのDan Larimer氏が含まれます。 イベント会場はまだ明らかにされていません。</p>
+<p>EOS London Hackathonのページによると、イベント前にさらに審査員が発表され、オンライン情報セッションは9月19日にZoomを通じて開催される予定です。</p>
+<p>&nbsp;</p>
+<p>ソース<a href="https://cryptoslate.com/part-four-of-eos-global-hackathon-location-revealed/">https://cryptoslate.com/part-four-of-eos-global-hackathon-location-revealed/</a></p>
+]]></content:encoded>
+							<wfw:commentRss>https://www.eosjapan.org/?feed=rss2&#038;p=458</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>ECAF 手数料のスケジュール</title>
+		<link>https://www.eosjapan.org/?p=452</link>
+				<comments>https://www.eosjapan.org/?p=452#respond</comments>
+				<pubDate>Wed, 22 Aug 2018 08:13:15 +0000</pubDate>
+		<dc:creator><![CDATA[Mariko]]></dc:creator>
+				<category><![CDATA[EOS]]></category>
+
+		<guid isPermaLink="false">https://www.eosjapan.org/?p=452</guid>
+				<description><![CDATA[この手数料スケジュールは、EOSコア仲裁フォーラム（ECAF ...]]></description>
+								<content:encoded><![CDATA[<p>この手数料スケジュールは、EOSコア仲裁フォーラム（ECAF）の紛争解決規則（RDR）に基づいて実施される仲裁です &#8211; 詳細についてはこちらをクリックしてください。<br />
+<a href="https://eoscorearbitration.io/home/governance/">https://eoscorearbitration.io/home/governance/</a></p>
+<p>この料金表は時々改訂されます。 ECAFの手数料はEOSで請求されます。 FIAT通貨からEOSへの変換が必要な場合は、このメモの最後にある通貨換算のセクションで詳しく説明しています。</p>
+<p>2段階の手数料システムは、以下の要素で構成されています。</p>
+<p>払い戻し不可能な手数料：ケースの提出時に支払われます。<br />
+仲裁費用：事件の終了時に支払われ、仲裁人、事件管理人、フォーラムスタッフ、外部の専門家などがケースに費やした時間を補償します。<br />
+N.B. 手数料は、当事者が可能性のある判決に対する確約者として仲裁人に掲示することが要求される債券とは別個のものです。</p>
+<p><strong>手数料</strong><br />
+申立人は、仲裁申請を提出する際に請求金額に応じた払い戻し不可能な出願手数料を次のように支払うものとする。</p>
+<p><img class="alignnone size-medium wp-image-453" src="https://www.eosjapan.org/wp-content/uploads/2018/08/EOS1-209x300.jpg" alt="" width="209" height="300" srcset="https://www.eosjapan.org/wp-content/uploads/2018/08/EOS1-209x300.jpg 209w, https://www.eosjapan.org/wp-content/uploads/2018/08/EOS1.jpg 643w" sizes="(max-width: 209px) 100vw, 209px" /></p>
+<p>&nbsp;</p>
+<p><strong>仲裁費用</strong><br />
+RDRに従ってセクション5.9：仲裁人は、仲裁の開始後実行可能な限り速やかに、仲裁費用の見積りを提供するものとする。仲裁の費用は裁定に定めるものとし、フォーラムの口座に支払うものとする。</p>
+<p>この費用には以下が含まれます</p>
+<p>仲裁手数料。<br />
+仲裁人の費用。<br />
+専門家と翻訳者のコスト。<br />
+事件の遂行に関連するフォーラムのその他の手数料および経費。<br />
+当事者が負う合理的な法的費用およびその他の費用。<br />
+否定的な行為や行動のために仲裁人によって賦課される罰金。<br />
+暫定または緊急救済の通知に関連して発生した費用。 そして<br />
+仲裁の統合の要求に関連して発生する費用。<br />
+仲裁費用は、フォーラムのメンバーが行った作業を参考にして計算されるものとする。 料金は、その複雑さと、中仲裁人が有する可能性のある特別な資格を含む、事情の状況によって異なります。</p>
+<p>手数料は、以下のように1時間ごとに課金されます（数値は米ドルで表示されますが、EOSで請求されます。下記の通貨換算の項を参照）。 適用されるレートは問題の人物の経験レベルと専門知識によって異なります。</p>
+<p><img class="alignnone size-medium wp-image-454" src="https://www.eosjapan.org/wp-content/uploads/2018/08/スクリーンショット-2018-08-22-16.01.08-300x120.png" alt="" width="300" height="120" srcset="https://www.eosjapan.org/wp-content/uploads/2018/08/スクリーンショット-2018-08-22-16.01.08-300x120.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/08/スクリーンショット-2018-08-22-16.01.08.png 636w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+<p>&nbsp;</p>
+<p><strong>デポジット(預金)</strong><br />
+仲裁人は当事者に対し、適切な時期にかかる割合で2種類の預金を提出するよう指示することができる。</p>
+<p>仲裁費用の前払い。 当事者によって寄託されたそのような支払いは、ECAF規則に従ってECAFによって適用され、かかる仲裁費用（ECAFの自己の手数料および費用を含む）を支払うことができる。<br />
+潜在的な判断に対する確約者としての役割を果たす紛争の総額に対する割合としての債券。<br />
+仲裁人は、当事者が仲裁人の指示に従って仲裁手数料の支払いに失敗した場合または拒否した場合、仲裁人は、相手方当事者に代替支払いを行い、仲裁が進行するように指示することができます。または仲裁費用に関する賞）。<br />
+そのような状況で代理支払を提出した当事者は、債務不履行の当事者がその当事者に直ちに支払うべき債務としてその金額を回収するために、仲裁人に命令または裁定を請求することができる。</p>
+<p>緊急援助を要請する当事者は、返還不可の申請手数料に加えて、緊急救済手続の費用の前払いとしてEOS相当額750米ドル（通貨換算については下記を参照）を支払うものとする。 手数料および預託金が支払われない場合、ECAFは緊急救済手続を進めてはならない。</p>
+<p>&nbsp;</p>
+<p><strong>中間支払い</strong><br />
+ECAFと仲裁人の承認を得て、仲裁が進行するにつれて仲裁費用の一部をカバーするために預金の一部が随時公表されることがあります。</p>
+<p>仮支払いが必要な時点で資金が保有されていない場合、または不十分な場合は、当事者が直接支払いを請求することができます。</p>
+<p>&nbsp;</p>
+<p><strong>支払い方法</strong><br />
+ECAFは、あなたにこれらの2つの口座のいずれかに資金を移転することのみを求めます：</p>
+<p><strong>ecafeewallet</strong><br />
+<strong>ecafescrowww</strong></p>
+<p>&nbsp;</p>
+<p><em><strong>警告：他のアカウントに資金を移転しないでください！ 他のEOSアカウントや交換アカウントへの支払いリクエストは不正なリクエストです！ ECAFは、異なる口座に振り替えられた資金に対しては責任を負いません。</strong></em></p>
+<p>&nbsp;</p>
+<p><strong>手数料の徴収</strong><br />
+請求者はECAFのファイルを介してクレームページを提出してください：<br />
+<a href="https://eoscorearbitration.io/file-a-claim/">https://eoscorearbitration.io/file-a-claim/</a></p>
+<p>その後ECAFの事務管理者は申請書を審査します。 ケースマネージャーは追加の情報が必要でないことを確認した後申請者に連絡して、適切なメモを添付して提出料を提出します。</p>
+<p>提出手数料が一旦受領されると、そのケースはフォーラムによって承認されたものとしてマークされ、仲裁人への譲渡を待ちます</p>
+<p>&nbsp;</p>
+<p><strong>預金の回収</strong><br />
+ケースに仲裁人が割り当てられると、仲裁コストの予備的な見積もりが行われます。<br />
+（この見積もりは、ケースの終わりに確定されます）。<br />
+仲裁人は事件管理人に、これらの費用の事案を当事者に通知するよう指示することができます。<br />
+仲裁人は仲介費用の一部を担保するために預金が必要かどうか、または紛争中の金額の保証金<br />
+デポジットはケースマネージャーによって収集され、ECAFのエスクロー口座に払い込まれ、当事者に提供されるメモとともに送られます。<br />
+預金は以下の方にのみ送金しなければなりません：<br />
+<strong>ecafescrowww</strong></p>
+<p>&nbsp;</p>
+<p><strong>通貨換算</strong><br />
+金額はEOSで請求されるものとする。</p>
+<p>支払額がEOSで引用されていない場合は、請求書、預託金および/または裁定の請求日の前日に行われた交換レートで換算されます。</p>
+<p>EOSからUSDに変換するために使用されるレートは、CoinMarketCapによって引用された指定日付のクロージングレート(終値)です。</p>
+<p>金額が米ドル以外の金額の通貨で表記されている場合、その金額はまずOandAが引用した特定日の平均アスクレート(売値)を使用して米ドルに変換されます。 上記のようにEOSに変換されます。</p>
+<p>&nbsp;</p>
+<p>ソース<a href="https://steemit.com/ecaf/@ecaf/ecaf-s-fee-schedule">https://steemit.com/ecaf/@ecaf/ecaf-s-fee-schedule</a></p>
+]]></content:encoded>
+							<wfw:commentRss>https://www.eosjapan.org/?feed=rss2&#038;p=452</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>分散型ウィキペディアのライバルはイーサリウムではなく、EOSのblockchain上で起動させます。 コンテンツ制作者にはトークンが与えられます</title>
+		<link>https://www.eosjapan.org/?p=446</link>
+				<comments>https://www.eosjapan.org/?p=446#respond</comments>
+				<pubDate>Wed, 22 Aug 2018 06:45:16 +0000</pubDate>
+		<dc:creator><![CDATA[Mariko]]></dc:creator>
+				<category><![CDATA[EOS]]></category>
+
+		<guid isPermaLink="false">https://www.eosjapan.org/?p=446</guid>
+				<description><![CDATA[Ethereum $ ETH▲1.42％で立ち上げる計画が間 ...]]></description>
+								<content:encoded><![CDATA[<p>Ethereum $ ETH▲1.42％で立ち上げる計画が間違っていると、EveripediaはEOSブロックチェーン上で稼動を開始すると発表しました。</p>
+<p>Everipediaは真にオープンで検閲のない情報データベースを提供することによって、Wikipediaに匹敵することを望んでいます。 その開発者はWikipediaはあまりにも多くの規制と &#8220;官僚的な監視&#8221;に苦しんでいるため、潜在的な百科事典作家のほんの一部にしか魅力がないと主張しています。</p>
+<p>2つのプラットフォーム間には切り離せない特別な関係があります。<br />
+特にWikipedia共同設立者であり、Everipedia CIO（最高情報責任者）の、ラリーサンガー氏の存在です。</p>
+<p>Everipediaが期待するのはEOSの分散型の性質の恩恵を受ける事ですが、どれだけの検閲抵抗が得られるのかは証明されていません。</p>
+<p>&nbsp;</p>
+<p><strong>EthereumからEOSへの移行</strong><br />
+その開始までは長い道のりでした。当初プロジェクトはEthereumベースにて作られ昨年登場しました。<br />
+ところが12月、チームはEOSに舵を切りました。これはサンガー氏の採用と同時に起こりました。 開発者はスケーラビリティの問題が解決されるまで、Ethereumの構築は「実行不可能な難しさ」であると主張しています。</p>
+<p>これは公正な議論ですが、EOSにはトラフィックの急激な増加をどう扱うかという独自ブランドの問題があることに注意が必要です。 特に重要なリソースをアプリ開発者、つまりRAMに配布するソリューションを登場させるのは困難でした。</p>
+<p>EveripediaのチームはHard Forkにメールで語りました。<br />
+「すべてが動作しているわけではなく、EOSプラットフォーム上で準備が整っているわけではありませんが、それはEthereumでも同じです。 スケーリング・ソリューションはまだまだ進んでおり、ストレージ、RAM、帯域幅のコストは大きく変動しています。 明らかに、物事は改善する必要があり、経済状態はうまくいきます」</p>
+<p>&nbsp;</p>
+<p><strong>Everipediaの機能</strong><br />
+Everipediaは、固有の暗号化方式であるIQによって強化されたインセンティブシステムを備えています。<br />
+コントリビューターとバリデーターは客観性と高い基準をトークンで報います。<br />
+これは分散型への盲目的な支持と同時に、質をコントロールする為に十分なものでなければいけません。</p>
+<p>また編集プロセスにお金を投入することには一定の倫理的問題が生じます。 牧歌的な「フリーマーケット」のおかげで答えが出てくるようです。インセンティブがある限り最高のコンテンツは必然的にトップに上がります。</p>
+<p>さらに中央集権を持たない事は新たな課題をもたらします。 分散コンテンツの品質維持に関する問題があることは既に承知しています。 つまりあまりにも多くのいいかげんな記事があり、そしてそれはとてつもなく広範囲で天文学的数字なのです。</p>
+<p>この問題はWikipediaがトロールにとって有名であることから、分散プラットフォーム特有の問題というわけではありません。 これに対処する為ウィキペディアはIPアドレスを追跡し、誰が何をしているのかを確認しています。ブロックチェーンを想起させるデータトレイルは、全てのページ編集の記録が保存される方法です。</p>
+<p>&nbsp;</p>
+<p>サンガー氏はプラットフォームがハードフォークによってどのように動作するかについてさらに詳しく述べました。</p>
+<p>&nbsp;</p>
+<p>ネットワークは分散化されているので、Everipediaだけでなく複数の百科事典からの記事を集めます。<br />
+同じトピックについて異なる記事を掲載することが可能になり、最終的に異なるトピックの人物、グループ、及び専門家により評価された同じトピックについて異なる記事を見つけることができるようにする評価システムが完成します。</p>
+<p>&nbsp;</p>
+<p><strong>ウィキべディアのように、、 しかしお金があります</strong><br />
+成功の鍵はシステムが本物のコンテンツを集められるかどうかにかかっています。 今日も存在しますが、それはまだ初期段階の実験です。 Wikipediaよりもすでに8,000人を超える寄稿者がおり、英語のエントリ数が多いと主張しています。</p>
+<p>これはおそらくEveripediaが先頭に立っているからです。元のデータベースはWikipediaの完全なコピーであり、完全なエントリです。 サンガー氏はハードフォークを保証しました。最終的には全く違うものになるでしょう。<br />
+Everipedia.orgはWikipediaのフォークとして始まり、常にwikiスタイルで共同的な百科事典を維持していますが、今後数年間でWikipediaとは根本的に異なるネットワークに発展するでしょう。</p>
+<p>つまりこれは実際に百科事典の世界的な労働力を結集しようとする試みです。ウィキペディアが試みたことですが、その非営利性とインセンティブの欠如のため、貢献者の完全性はしばしば批判を招きました。 数年前The Atlanticはウィキペディアの一部コンテンツは消費者や医療患者に影響を与える為、お金を支払った人達によって改ざんされていたと報告しました。</p>
+<p>貢献することを心地よく感じる多くの人々の協力が必要です。 活動中のウィキペディアン約10,000人の寄稿者の代わりに、よりオープンで分散化したネットワークは世界中の何百万人もの知識人の労働を組織することができます。 しかし中立的な技術プロトコルを通じて、インターネット自体が組織化されたのと同じように、非常に分散し、かつ中立的リーダーレスな方法で、それらを組織することができます。</p>
+<p>&nbsp;</p>
+<p><strong>EOSで処理出来るのか？</strong><br />
+EOSにはコンセンサスから独立したブロック・プロデューサーが過去憲法上の責任義務を怠り、彼らが好きなように行動してきた歴史があります。<br />
+最近7つの口座がハウスから盗まれた資金が収容されている疑いで凍結されました。<br />
+通常任意の組織がこのような決定を下し、彼らは動きを拒否したにもかかわらず、ブロックプロデューサーは先に進みとにかく実行したのです。</p>
+<p>&nbsp;</p>
+<p><strong>Block.oneがEOSに及ぼす影響についても懸念があります。</strong><br />
+Dan Larimer氏は最近ネットワーク内のブロックを生産する権利の選挙に参加すると宣言しました。 一見これは上にあるように見えるかもしれませんが、<br />
+EOSはDelegated Proof-of-Stakeコンセンサスを利用しており、Block.oneによって管理される大量のEOSは、分散型のいくつかの主張に挑戦しています。</p>
+<p>クリエイターとしてBlock.oneは実際には投票の25％をコントロールするのに十分なEOSを所有しており、意思決定を集中化するかどうかはもちろん、重要な利益相反の懸念が生じます。 しかしこの2日前、Dan Larimer氏は憲法を完全に取り除きそれが「賢明でない」と主張していました。</p>
+<p>EOSのガバナンスがEveripediaに与える影響について、全てに疑問を抱くことがあります。 プロトコル外でアカウントの凍結を決定できれば、アカウントロックすることにより投稿者を黙らせる事が出来るのでしょうか？</p>
+<p>もし私達が本当に分散型の新しいインターネットを構築しているのであれば、おそらく独自の百科事典を持っているはずです。 投稿者の為の金銭的な報酬制度がある事は確かに素晴らしいですが、コンテンツの作成に対する払い出しは、必然的に編集倫理の方法になります。</p>
+<p>潜在的な結果はまだ出ていませんが、ついにEveripediaが一般に公開され、そして私達は最前列に座っています</p>
+<p>&nbsp;</p>
+<p>ソース<a href="https://thenextweb.com/hardfork/2018/08/09/everipedia-launch-eos-not-ready/">https://thenextweb.com/hardfork/2018/08/09/everipedia-launch-eos-not-ready/</a></p>
+]]></content:encoded>
+							<wfw:commentRss>https://www.eosjapan.org/?feed=rss2&#038;p=446</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

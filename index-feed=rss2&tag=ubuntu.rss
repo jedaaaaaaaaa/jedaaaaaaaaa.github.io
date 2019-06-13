@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Ubuntu &#8211; JEDA</title>
+	<atom:link href="https://www.eosjapan.org/?feed=rss2&#038;tag=ubuntu" rel="self" type="application/rss+xml" />
+	<link>https://www.eosjapan.org</link>
+	<description>一般社団法人　日本EOS ​開発者協会</description>
+	<lastBuildDate>
+	Tue, 19 Feb 2019 05:29:33 +0000	</lastBuildDate>
+	<language>ja</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+
+<image>
+	<url>https://www.eosjapan.org/wp-content/uploads/2018/04/cropped-logo-1-32x32.png</url>
+	<title>Ubuntu &#8211; JEDA</title>
+	<link>https://www.eosjapan.org</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>最新版EOSをUbuntu 18.04.1 LTS環境にインストール</title>
+		<link>https://www.eosjapan.org/?p=469</link>
+				<comments>https://www.eosjapan.org/?p=469#respond</comments>
+				<pubDate>Mon, 10 Sep 2018 10:21:47 +0000</pubDate>
+		<dc:creator><![CDATA[Singularity Technology]]></dc:creator>
+				<category><![CDATA[EOS]]></category>
+		<category><![CDATA[チュートリアル]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+		<category><![CDATA[インストール]]></category>
+		<category><![CDATA[環境構築]]></category>
+
+		<guid isPermaLink="false">https://www.eosjapan.org/?p=469</guid>
+				<description><![CDATA[EOSのメインネットがリリースされたら、元々のローカルのテス ...]]></description>
+								<content:encoded><![CDATA[<p>EOSのメインネットがリリースされたら、元々のローカルのテスト環境がバージョンアップしていない。最近、新しい案件を立ち上げようとして、最新のバージョンを挑戦しましょう！</p>
+<p>ここで、古いバージョンとの差異も含めて、インストール手順と注意事項をメモして、共有します。</p>
+<p>&nbsp;</p>
+<h5>OSバージョン：</h5>
+<p><span style="color: #ff0000">Ubuntu 18.04.1 LTS</span></p>
+<h1>手順：</h1>
+<h2>１、githubから最新のソースコードをダウンロード</h2>
+<p><span style="color: #0000ff"><span class="nv">$ </span>git clone https://github.com/EOSIO/eos <span class="nt">&#8211;recursive</span></span></p>
+<h2>２、ソースコードをコンパイル</h2>
+<p>ダウンロードが完了したら、eosフォルダに移動して、eosio_build.shを実行すれば、OKです。</p>
+<p>最初の１回目は多少時間がかかる。２回目からかからなくなる。</p>
+<p><span style="color: #0000ff"><span class="nv">$ </span><span class="nb">cd </span>eos</span></p>
+<p><span style="color: #0000ff"> <span class="nv">$ </span>./eosio_build.sh</span></p>
+<p>下記画面が出たら、コンパイルが成功！</p>
+<p><img class="alignnone wp-image-474" src="https://www.eosjapan.org/wp-content/uploads/2018/09/1-300x241.png" alt="" width="735" height="590" srcset="https://www.eosjapan.org/wp-content/uploads/2018/09/1-300x241.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/09/1.png 702w" sizes="(max-width: 735px) 100vw, 735px" /><br />
+<span style="color: #ff0000"><strong>ご注意：</strong></span></p>
+<p><span style="color: #000000">上記画面で、これから何をすべきかを明確に書いてます。</span></p>
+<p><span style="color: #ff0000">To verify your installation run the following commands:</span></p>
+<p><span style="color: #ff0000">export PATH=${HOME}/opt/mongodb/bin:$PATH</span></p>
+<p><span style="color: #ff0000">/root/opt/mongodb/bin/mongod -f /root/opt/mongodb/mongod.conf &amp;</span></p>
+<p><span style="color: #ff0000">cd /home/yaoyh/app/eos/build; make test</span></p>
+<p>必ず従ってやった方が良いです。</p>
+<h2>３、案内通りコマンド発行</h2>
+<p><span style="color: #0000ff"><span class="nv">$ </span><span class="nb">export </span><span class="nv">PATH</span><span class="o">=</span><span class="k">${</span><span class="nv">HOME</span><span class="k">}</span>/opt/mongodb/bin:<span class="nv">$PATH</span></span></p>
+<p><span style="color: #0000ff"> <span class="nv">$ </span>/root/opt/mongodb/bin/mongod <span class="nt">-f</span> /root/opt/mongodb/mongod.conf &amp;</span></p>
+<p><span style="color: #0000ff"> <span class="nv">$ </span><span class="nb">cd</span> /home/yaoyh/app/eos/build<span class="p">;</span> make <span class="nb">test</span></span></p>
+<p>make testは４１項目があって（前のバージョンは35？項目）、完了までは時間がかかるし、全部OKが必要。</p>
+<p>運が良くなくて、エラーが出ると、下記方法でエラー詳細が見えます。</p>
+<p>調査に役に立つと思います。</p>
+<h2>４、テスト失敗の対策</h2>
+<p>例えば、Mongod関連のテストが落ちた、ログを出力しようとすると</p>
+<p><span style="color: #0000ff"><span class="nv">$ </span><span class="nb">cd</span> /yourpath/eos/build/programs/nodeos </span></p>
+<p><span style="color: #0000ff"><span class="nv">$ </span>./nodeos_run_test.py <span class="nt">&#8211;mongod</span> <span class="nt">-v</span> <span class="nt">&#8211;dump-error-detail</span> <span class="o">&gt;</span>&amp;　mongod_test.out</span></p>
+<p>Eosのアーキテクチャはよく知らない方は下記構成図を頭に入った方が良いでしょう。</p>
+<h2><img class="alignnone wp-image-476" src="https://www.eosjapan.org/wp-content/uploads/2018/09/f101fe77-ca50-4690-be59-09c90ebe5544-300x145.png" alt="" width="716" height="346" srcset="https://www.eosjapan.org/wp-content/uploads/2018/09/f101fe77-ca50-4690-be59-09c90ebe5544-300x145.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/09/f101fe77-ca50-4690-be59-09c90ebe5544-768x372.png 768w, https://www.eosjapan.org/wp-content/uploads/2018/09/f101fe77-ca50-4690-be59-09c90ebe5544.png 1000w" sizes="(max-width: 716px) 100vw, 716px" /></h2>
+<p>５、いよいよインストール</p>
+<p>テスト全部OKなったら、いよいよインストール段階に入った。</p>
+<p><span style="color: #0000ff"><span class="nv">$ </span><span class="nb">cd </span>build </span></p>
+<p><span style="color: #0000ff"><span class="nv"> $ </span>make <span class="nb">install</span></span></p>
+<p><span style="color: #000000">makeを使わず、/eos/eosio_install.shを使ってインストールも可能です。</span></p>
+<p><span style="color: #0000ff"><span class="nv">$ </span><span class="nb">cd</span> /yourPath/eos</span></p>
+<p><span style="color: #0000ff"> <span class="nv">$ </span>eosio_install.sh</span></p>
+<p><img class="alignnone wp-image-478" src="https://www.eosjapan.org/wp-content/uploads/2018/09/40ca2ac3-c8b4-4bb8-9118-002263edf606-300x270.png" alt="" width="734" height="661" srcset="https://www.eosjapan.org/wp-content/uploads/2018/09/40ca2ac3-c8b4-4bb8-9118-002263edf606-300x270.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/09/40ca2ac3-c8b4-4bb8-9118-002263edf606.png 691w" sizes="(max-width: 734px) 100vw, 734px" /><br />
+お疲れ様でした。ここまで、インストールが完了しました。</p>
+<h2>６、Nodeを起動</h2>
+<p>nodeを起動してみましょう。</p>
+<p><span style="color: #0000ff"><span class="nv">$ </span> nodeos <span class="nt">-e</span> <span class="nt">-p</span> eosio <span class="nt">&#8211;plugin</span> eosio::chain_api_plugin <span class="nt">&#8211;plugin</span> eosio::history_api_plugin</span></p>
+<p>上記コマンドを発行するより、0.5秒周期で一つブロックが作成できる。</p>
+<p><img class="alignnone wp-image-479" src="https://www.eosjapan.org/wp-content/uploads/2018/09/22b62ecf-189d-4524-9f45-cb301113b2ab-300x217.png" alt="" width="735" height="532" srcset="https://www.eosjapan.org/wp-content/uploads/2018/09/22b62ecf-189d-4524-9f45-cb301113b2ab-300x217.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/09/22b62ecf-189d-4524-9f45-cb301113b2ab.png 724w" sizes="(max-width: 735px) 100vw, 735px" /></p>
+<h2>７、NODEの情報を見る</h2>
+<p><span style="color: #0000ff"><span class="nv">$ </span> <span class="nb">cd</span> /youpath/eos/build/programs/cleos</span></p>
+<p><span style="color: #0000ff"> <span class="nv">$ </span> cleos get info</span></p>
+<p><img class="alignnone wp-image-480" src="https://www.eosjapan.org/wp-content/uploads/2018/09/2da478bc-f94a-46f2-bd85-4375c19ee7d1-300x126.png" alt="" width="733" height="308" srcset="https://www.eosjapan.org/wp-content/uploads/2018/09/2da478bc-f94a-46f2-bd85-4375c19ee7d1-300x126.png 300w, https://www.eosjapan.org/wp-content/uploads/2018/09/2da478bc-f94a-46f2-bd85-4375c19ee7d1.png 732w" sizes="(max-width: 733px) 100vw, 733px" /></p>
+<p>ブロックの作成が続いているから、&#8221;head_block_num&#8221;と &#8220;last_irreversible_block_num&#8221;がどんどん増えていく。</p>
+]]></content:encoded>
+							<wfw:commentRss>https://www.eosjapan.org/?feed=rss2&#038;p=469</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

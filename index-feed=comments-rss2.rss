@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	JEDA へのコメント	</title>
+	<atom:link href="https://www.eosjapan.org/?feed=comments-rss2" rel="self" type="application/rss+xml" />
+	<link>https://www.eosjapan.org</link>
+	<description>一般社団法人　日本EOS ​開発者協会</description>
+	<lastBuildDate>
+	Wed, 12 Sep 2018 01:41:07 +0000	</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+			<item>
+				<title>
+				jill より Scatterを使用してEOS登録、Transferのコマンド（Binanceへの送金など） へのコメント				</title>
+				<link>https://www.eosjapan.org/?p=360#comment-88</link>
+		<dc:creator><![CDATA[jill]]></dc:creator>
+		<pubDate>Wed, 12 Sep 2018 01:41:07 +0000</pubDate>
+		<guid isPermaLink="false">http://www.eosjapan.info/?p=360#comment-88</guid>
+					<description><![CDATA[とんでもないです。ゲームを楽しみ！]]></description>
+		<content:encoded><![CDATA[<p>とんでもないです。ゲームを楽しみ！</p>
+]]></content:encoded>
+						</item>
+						<item>
+				<title>
+				工藤 より Scatterを使用してEOS登録、Transferのコマンド（Binanceへの送金など） へのコメント				</title>
+				<link>https://www.eosjapan.org/?p=360#comment-87</link>
+		<dc:creator><![CDATA[工藤]]></dc:creator>
+		<pubDate>Tue, 11 Sep 2018 09:49:48 +0000</pubDate>
+		<guid isPermaLink="false">http://www.eosjapan.info/?p=360#comment-87</guid>
+					<description><![CDATA[再度失礼致します。
+一度Scatterを削除し、再度インストールして試してみたところ、無事にゲームをプレイできるようになりました。
+お手数おかけ致しました。]]></description>
+		<content:encoded><![CDATA[<p>再度失礼致します。<br />
+一度Scatterを削除し、再度インストールして試してみたところ、無事にゲームをプレイできるようになりました。<br />
+お手数おかけ致しました。</p>
+]]></content:encoded>
+						</item>
+						<item>
+				<title>
+				jill より Scatterを使用してEOS登録、Transferのコマンド（Binanceへの送金など） へのコメント				</title>
+				<link>https://www.eosjapan.org/?p=360#comment-86</link>
+		<dc:creator><![CDATA[jill]]></dc:creator>
+		<pubDate>Tue, 11 Sep 2018 09:28:04 +0000</pubDate>
+		<guid isPermaLink="false">http://www.eosjapan.info/?p=360#comment-86</guid>
+					<description><![CDATA[申し訳ないですか、Scatterのエラー画面をスクリーンショットして、info@eosjapan.orgにメール送りませんか？（private keyが見える場合、必ずprivate keyをカバーして誰でも見えないように送ってください）その画面によってエラーに対応します。]]></description>
+		<content:encoded><![CDATA[<p>申し訳ないですか、Scatterのエラー画面をスクリーンショットして、info@eosjapan.orgにメール送りませんか？（private keyが見える場合、必ずprivate keyをカバーして誰でも見えないように送ってください）その画面によってエラーに対応します。</p>
+]]></content:encoded>
+						</item>
+						<item>
+				<title>
+				工藤 より Scatterを使用してEOS登録、Transferのコマンド（Binanceへの送金など） へのコメント				</title>
+				<link>https://www.eosjapan.org/?p=360#comment-85</link>
+		<dc:creator><![CDATA[工藤]]></dc:creator>
+		<pubDate>Tue, 11 Sep 2018 08:22:30 +0000</pubDate>
+		<guid isPermaLink="false">http://www.eosjapan.info/?p=360#comment-85</guid>
+					<description><![CDATA[返答ありがとうございます。
+
+EOSメインネット移行前にマッピングしたこともなく、EOSのアカウントを持っていませんでした。
+なので、質問させて頂いてから調べて、EOSのアカウント生成しました。
+しかし、Scatterを拡張機能からインストールし、プライベートキーとパブリックキーをScatterに入力しましたが、ゲームが未だできない状態です。
+（ちなみにScatterでの入力で、プライベートキーを入力したらパブリックキーは自動的に表示されました）
+
+Scatter側から「追加情報をリクエストしています。
+必要
+EOSアカウント
+アプリケーションによっては、メールや生年月日などの情報が必要になることがあります。右側のアイデンティティは、利用可能な特定のプロパティを使用してネットワーク上で所有しているものです。
+たとえアプリケーションがアクセス権を要求していないプロパティをIDに提供しても、アプリケーションはそれらを見ることはできず、そのアイデンティティの存在を知ることさえできません。」と表示されてしまいます。
+「メールや生年月日などの情報が」とのことなので、それらを入力しましたが、やはり解決せずで今また調べてしたところです…。]]></description>
+		<content:encoded><![CDATA[<p>返答ありがとうございます。</p>
+<p>EOSメインネット移行前にマッピングしたこともなく、EOSのアカウントを持っていませんでした。<br />
+なので、質問させて頂いてから調べて、EOSのアカウント生成しました。<br />
+しかし、Scatterを拡張機能からインストールし、プライベートキーとパブリックキーをScatterに入力しましたが、ゲームが未だできない状態です。<br />
+（ちなみにScatterでの入力で、プライベートキーを入力したらパブリックキーは自動的に表示されました）</p>
+<p>Scatter側から「追加情報をリクエストしています。<br />
+必要<br />
+EOSアカウント<br />
+アプリケーションによっては、メールや生年月日などの情報が必要になることがあります。右側のアイデンティティは、利用可能な特定のプロパティを使用してネットワーク上で所有しているものです。<br />
+たとえアプリケーションがアクセス権を要求していないプロパティをIDに提供しても、アプリケーションはそれらを見ることはできず、そのアイデンティティの存在を知ることさえできません。」と表示されてしまいます。<br />
+「メールや生年月日などの情報が」とのことなので、それらを入力しましたが、やはり解決せずで今また調べてしたところです…。</p>
+]]></content:encoded>
+						</item>
+						<item>
+				<title>
+				jill より Scatterを使用してEOS登録、Transferのコマンド（Binanceへの送金など） へのコメント				</title>
+				<link>https://www.eosjapan.org/?p=360#comment-84</link>
+		<dc:creator><![CDATA[jill]]></dc:creator>
+		<pubDate>Tue, 11 Sep 2018 07:49:12 +0000</pubDate>
+		<guid isPermaLink="false">http://www.eosjapan.info/?p=360#comment-84</guid>
+					<description><![CDATA[ご質問ありがとうございました。EOSメインネット移行前、マッピングした事ありますか？またはEOSメインネット移行前後、EOSが取引所に保存してましたか？EOSのDappゲームをプレイしたいなら、EOSメインネットのアカウントを持つ事が必要です。EOSアカウントを持ったら、そのアカウントのプライベートキーとパブリックキーをScatterに入力した後でゲームがプレイできます。]]></description>
+		<content:encoded><![CDATA[<p>ご質問ありがとうございました。EOSメインネット移行前、マッピングした事ありますか？またはEOSメインネット移行前後、EOSが取引所に保存してましたか？EOSのDappゲームをプレイしたいなら、EOSメインネットのアカウントを持つ事が必要です。EOSアカウントを持ったら、そのアカウントのプライベートキーとパブリックキーをScatterに入力した後でゲームがプレイできます。</p>
+]]></content:encoded>
+						</item>
+						<item>
+				<title>
+				工藤 より Scatterを使用してEOS登録、Transferのコマンド（Binanceへの送金など） へのコメント				</title>
+				<link>https://www.eosjapan.org/?p=360#comment-83</link>
+		<dc:creator><![CDATA[工藤]]></dc:creator>
+		<pubDate>Mon, 10 Sep 2018 09:34:17 +0000</pubDate>
+		<guid isPermaLink="false">http://www.eosjapan.info/?p=360#comment-83</guid>
+					<description><![CDATA[質問させてください。
+
+EOSのDAPPSゲームをプレイしたいと思い、クローム拡張機能にてscatterをインストールしました。
+どうやらEOSのプライベートキーやパブリックキーが必要なようなのですが…
+EOSメインネット移行後、EOSのページの「GET EOS」ボタンがありません。
+
+どのようにすれば宜しいでしょうか？
+
+ご回答よろしくお願い致します。]]></description>
+		<content:encoded><![CDATA[<p>質問させてください。</p>
+<p>EOSのDAPPSゲームをプレイしたいと思い、クローム拡張機能にてscatterをインストールしました。<br />
+どうやらEOSのプライベートキーやパブリックキーが必要なようなのですが…<br />
+EOSメインネット移行後、EOSのページの「GET EOS」ボタンがありません。</p>
+<p>どのようにすれば宜しいでしょうか？</p>
+<p>ご回答よろしくお願い致します。</p>
+]]></content:encoded>
+						</item>
+						<item>
+				<title>
+				makoto より Scatterを使用してEOS登録、Transferのコマンド（Binanceへの送金など） へのコメント				</title>
+				<link>https://www.eosjapan.org/?p=360#comment-53</link>
+		<dc:creator><![CDATA[makoto]]></dc:creator>
+		<pubDate>Fri, 27 Jul 2018 09:06:44 +0000</pubDate>
+		<guid isPermaLink="false">http://www.eosjapan.info/?p=360#comment-53</guid>
+					<description><![CDATA[ご質問させてください「3日間の解凍期間を待つ必要があります。」3日過ぎてないでrefundしたらどうなってしまうんですか？　仕様なんでしょうか？　過ぎたことはeostoolkit.io上で確認できますか？
+よろしくお願いします。]]></description>
+		<content:encoded><![CDATA[<p>ご質問させてください「3日間の解凍期間を待つ必要があります。」3日過ぎてないでrefundしたらどうなってしまうんですか？　仕様なんでしょうか？　過ぎたことはeostoolkit.io上で確認できますか？<br />
+よろしくお願いします。</p>
+]]></content:encoded>
+						</item>
+						<item>
+				<title>
+				jill より Scatterを使用してEOS登録、Transferのコマンド（Binanceへの送金など） へのコメント				</title>
+				<link>https://www.eosjapan.org/?p=360#comment-51</link>
+		<dc:creator><![CDATA[jill]]></dc:creator>
+		<pubDate>Wed, 25 Jul 2018 09:06:35 +0000</pubDate>
+		<guid isPermaLink="false">http://www.eosjapan.info/?p=360#comment-51</guid>
+					<description><![CDATA[ギャリソン　様　お返事遅くなり誠に申し訳ありません。
+EOSのアカウントお持ちでしょうか？取引所にあるEOSをscatterに移動したいと、EOSのアカウントが必要です。
+ETHから登録した場合、EOSのアカウントの名前は自動的に制作されます。他の場合、ツール（ウォレットなど）を通じて、EOSのアカウントが作れます。その時、公開鍵と秘密鍵が自動的に制作されます。
+詳しくはhttps://t.me/eosjapanに参加してください。
+宜しくお願いします。]]></description>
+		<content:encoded><![CDATA[<p>ギャリソン　様　お返事遅くなり誠に申し訳ありません。<br />
+EOSのアカウントお持ちでしょうか？取引所にあるEOSをscatterに移動したいと、EOSのアカウントが必要です。<br />
+ETHから登録した場合、EOSのアカウントの名前は自動的に制作されます。他の場合、ツール（ウォレットなど）を通じて、EOSのアカウントが作れます。その時、公開鍵と秘密鍵が自動的に制作されます。<br />
+詳しくはhttps://t.me/eosjapanに参加してください。<br />
+宜しくお願いします。</p>
+]]></content:encoded>
+						</item>
+						<item>
+				<title>
+				ギャリソン より Scatterを使用してEOS登録、Transferのコマンド（Binanceへの送金など） へのコメント				</title>
+				<link>https://www.eosjapan.org/?p=360#comment-46</link>
+		<dc:creator><![CDATA[ギャリソン]]></dc:creator>
+		<pubDate>Fri, 20 Jul 2018 14:56:04 +0000</pubDate>
+		<guid isPermaLink="false">http://www.eosjapan.info/?p=360#comment-46</guid>
+					<description><![CDATA[&#062; 後、Start Basic Setupを選択。
+&#062; EOSを登録した時、こんな風にプライベートキーが現れました。ちゃんとメモしましたか？（登録をしなかった場合は、最後の項目「登録を忘れた場合」を参照して下さい）
+
+上記記述に関してEOSメインネット移行後でもEOSの登録出来るのでしょうか。（EOSのページの「GET EOS」ボタンがもうありませんでした。）
+取引所にあるEOSをscatterに移したいのですが、KeyPairを登録しないと移せないのでしょうか。
+scatterに入力する公開鍵、秘密鍵の作成方法がわかりませんので、ご教授いただければ幸いです。]]></description>
+		<content:encoded><![CDATA[<p>&gt; 後、Start Basic Setupを選択。<br />
+&gt; EOSを登録した時、こんな風にプライベートキーが現れました。ちゃんとメモしましたか？（登録をしなかった場合は、最後の項目「登録を忘れた場合」を参照して下さい）</p>
+<p>上記記述に関してEOSメインネット移行後でもEOSの登録出来るのでしょうか。（EOSのページの「GET EOS」ボタンがもうありませんでした。）<br />
+取引所にあるEOSをscatterに移したいのですが、KeyPairを登録しないと移せないのでしょうか。<br />
+scatterに入力する公開鍵、秘密鍵の作成方法がわかりませんので、ご教授いただければ幸いです。</p>
+]]></content:encoded>
+						</item>
+						<item>
+				<title>
+				坂本和則 より EOSトークンマッピングのお知らせ へのコメント				</title>
+				<link>https://www.eosjapan.org/?p=299#comment-7</link>
+		<dc:creator><![CDATA[坂本和則]]></dc:creator>
+		<pubDate>Thu, 31 May 2018 04:28:33 +0000</pubDate>
+		<guid isPermaLink="false">http://www.eosjapan.info/?p=299#comment-7</guid>
+					<description><![CDATA[いつもお世話になっております。
+
+お陰さまで、MyEtherWallet マッピングが完了しました。
+初めてのことなのでちょっと憂鬱な感じでしたが、
+手順に従って無事に出来ました。
+ありがとうございました！]]></description>
+		<content:encoded><![CDATA[<p>いつもお世話になっております。</p>
+<p>お陰さまで、MyEtherWallet マッピングが完了しました。<br />
+初めてのことなのでちょっと憂鬱な感じでしたが、<br />
+手順に従って無事に出来ました。<br />
+ありがとうございました！</p>
+]]></content:encoded>
+						</item>
+			</channel>
+</rss>

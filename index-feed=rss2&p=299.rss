@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	EOSトークンマッピングのお知らせ へのコメント	</title>
+	<atom:link href="https://www.eosjapan.org/?feed=rss2&#038;p=299" rel="self" type="application/rss+xml" />
+	<link>https://www.eosjapan.org/?p=299</link>
+	<description>一般社団法人　日本EOS ​開発者協会</description>
+	<lastBuildDate>
+	Wed, 12 Sep 2018 01:41:07 +0000	</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.1.1</generator>
+			<item>
+				<title>
+				坂本和則 より				</title>
+				<link>https://www.eosjapan.org/?p=299#comment-7</link>
+		<dc:creator><![CDATA[坂本和則]]></dc:creator>
+		<pubDate>Thu, 31 May 2018 04:28:33 +0000</pubDate>
+		<guid isPermaLink="false">http://www.eosjapan.info/?p=299#comment-7</guid>
+					<description><![CDATA[いつもお世話になっております。
+
+お陰さまで、MyEtherWallet マッピングが完了しました。
+初めてのことなのでちょっと憂鬱な感じでしたが、
+手順に従って無事に出来ました。
+ありがとうございました！]]></description>
+		<content:encoded><![CDATA[<p>いつもお世話になっております。</p>
+<p>お陰さまで、MyEtherWallet マッピングが完了しました。<br />
+初めてのことなのでちょっと憂鬱な感じでしたが、<br />
+手順に従って無事に出来ました。<br />
+ありがとうございました！</p>
+]]></content:encoded>
+						</item>
+			</channel>
+</rss>
