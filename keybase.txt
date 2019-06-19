@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/newbdez33
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://www.eosjapan.org
+  * I am newbdez33 (https://keybase.io/newbdez33) on keybase.
+  * I have a public key ASDUIMsGgKjxTd0AEyXz7sUkfPlDRaf_YDjDAAJz3vMopAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120d420cb0680a8f14ddd001325f3eec5247cf94345a7ff6038c3000273def328a40a",
+      "host": "keybase.io",
+      "kid": "0120d420cb0680a8f14ddd001325f3eec5247cf94345a7ff6038c3000273def328a40a",
+      "uid": "380690f0ac24e611d5d79cde80ac6d19",
+      "username": "newbdez33"
+    },
+    "merkle_root": {
+      "ctime": 1529510280,
+      "hash": "728a5927dcca8a7f92e8f74d395e8017d451ab1d7c809315f5e293834b60fb64c92dc572a81933486713be193d99f39c76076370392a4b807a640b2b573fb1e8",
+      "hash_meta": "9cbb0328a3c46dc413eccf6db6a5c4fe2c7e9d58037dab84922d6d18e71d69b8",
+      "seqno": 3110904
+    },
+    "service": {
+      "entropy": "z7GDDQdHxNqmQ3JYk3sAgHyo",
+      "hostname": "www.eosjapan.org",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "2.0.0"
+  },
+  "ctime": 1529510302,
+  "expire_in": 504576000,
+  "prev": "31871b53bfb38cd0921185fe10cdd3a1683cf4ea3140fbe77a2c67c35b984720",
+  "seqno": 30,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg1CDLBoCo8U3dABMl8+7FJHz5Q0Wn/2A4wwACc97zKKQKp3BheWxvYWTESpcCHsQgMYcbU7+zjNCSEYX+EM3ToWg89OoxQPvneixnw1uYRyDEIER/ymfwVEDQ+SWuYLl44v4IIrr6uwp7/WlJ4rm5l1hTAgHCo3NpZ8RAj4d8yPERqxSpEjYq2WAHj+BcmfNdoeC5wzJm5z8BTz9YkBEgFvLR+JERmmr+pfSeYTDKAQylttrv29jAUlyHAahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIPJHdTSoSsjLbx69OI5Xy4D9wmFn6gZ5zrbxXz7daGWSo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/newbdez33
+
+==================================================================
